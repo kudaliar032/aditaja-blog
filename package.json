@@ -3,16 +3,7 @@
   "description": "A simple starter for Gatsby. That's it.",
   "version": "0.2.0",
   "author": "Radek Kozieł <radoslaw.koziel@gmail.com>",
-  "keywords": [
-    "gatsby",
-    "minimal",
-    "starter",
-    "blog",
-    "theme",
-    "dark",
-    "light",
-    "personal site"
-  ],
+  "keywords": [],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -21,7 +12,7 @@
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "dependencies": {
-    "gatsby": "^2.0.76",
+    "gatsby": "^2.23.7",
     "gatsby-awesome-pagination": "^0.3.3",
     "gatsby-image": "^2.0.20",
     "gatsby-plugin-disqus": "^1.2.0",
