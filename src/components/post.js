@@ -2,12 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
+import { Disqus } from 'gatsby-plugin-disqus'
 import Navigation from './navigation'
 import { toKebabCase } from '../helpers'
 
 import style from '../styles/post.module.css'
 
 const Post = ({
+  id,
   title,
   date,
   path,
@@ -23,6 +25,11 @@ const Post = ({
   const previousLabel = previousPost && previousPost.frontmatter.title
   const nextPath = nextPost && nextPost.frontmatter.path
   const nextLabel = nextPost && nextPost.frontmatter.title
+
+  const disqusConfig = {
+    identifier: id,
+    title,
+  }
 
   return (
     <div className={style.post}>
@@ -66,6 +73,7 @@ const Post = ({
               nextPath={nextPath}
               nextLabel={nextLabel}
             />
+            <Disqus config={disqusConfig} />
           </>
         )}
       </div>
@@ -74,6 +82,7 @@ const Post = ({
 }
 
 Post.propTypes = {
+  id: PropTypes.string,
   title: PropTypes.string,
   date: PropTypes.string,
   path: PropTypes.string,

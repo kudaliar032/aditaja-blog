@@ -7,31 +7,23 @@ const postCSSMixins = require('postcss-mixins')
 
 module.exports = {
   siteMetadata: {
-    title: `Hello Friend`,
-    description: `A simple starter for Gatsby. That's it.`,
+    title: `adiiitya blog`,
+    description: `Aditya rahman personal blog`,
     copyrights: '',
-    author: `@panr`,
+    author: `Aditya Rahman`,
     logo: {
       src: '',
       alt: '',
     },
-    logoText: 'hello friend',
-    defaultTheme: 'dark',
+    logoText: 'adiiitya blog',
+    defaultTheme: 'light',
     postsPerPage: 5,
     showMenuItems: 2,
-    menuMoreText: 'Show more',
+    menuMoreText: 'More',
     mainMenu: [
       {
         title: 'About',
         path: '/about',
-      },
-      {
-        title: 'Showcase',
-        path: '/showcase',
-      },
-      {
-        title: 'Example',
-        path: '/example',
       },
     ],
   },
@@ -115,12 +107,18 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-hello-friend`,
-        short_name: `hello-friend`,
+        short_name: `adiiit-blog`,
         start_url: `/`,
         background_color: `#292a2d`,
         theme_color: `#292a2d`,
         display: `minimal-ui`,
-        icon: `src/images/hello-icon.png`,
+        icon: `src/images/notebook.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `adiiitya-blog`,
       },
     },
   ],

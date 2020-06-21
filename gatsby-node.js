@@ -7,6 +7,7 @@ const pageTypeRegex = /src\/(.*?)\//
 const getType = node => node.fileAbsolutePath.match(pageTypeRegex)[1]
 
 const pageTemplate = path.resolve(`./src/templates/page.js`)
+const postTemplate = path.resolve(`./src/templates/post.js`)
 const indexTemplate = path.resolve(`./src/templates/index.js`)
 const tagsTemplate = path.resolve(`./src/templates/tags.js`)
 
@@ -23,7 +24,6 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
         edges {
           node {
             frontmatter {
-              path
               title
               tags
             }
@@ -72,21 +72,30 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
     // Create each markdown page and post
     forEach(({ node }, index) => {
       const previous = index === 0 ? null : sortedPages[index - 1].node
-      const next =
-        index === sortedPages.length - 1 ? null : sortedPages[index + 1].node
+      const next = index === sortedPages.length - 1 ? null : sortedPages[index + 1].node
       const isNextSameType = getType(node) === (next && getType(next))
-      const isPreviousSameType =
-        getType(node) === (previous && getType(previous))
+      const isPreviousSameType = getType(node) === (previous && getType(previous))
 
-      createPage({
-        path: node.frontmatter.path,
-        component: pageTemplate,
-        context: {
-          type: getType(node),
-          next: isNextSameType ? next : null,
-          previous: isPreviousSameType ? previous : null,
-        },
-      })
+      // select page or post
+      if (node.fileAbsolutePath.indexOf('/posts/') !== -1) {
+        createPage({
+          path: path.basename(node.fileAbsolutePath, `.md`),
+          component: postTemplate,
+          context: {
+            type: getType(node),
+            next: isNextSameType ? next : null,
+            previous: isPreviousSameType ? previous : null,
+          },
+        })
+      } else {
+        createPage({
+          path: path.basename(node.fileAbsolutePath, `.md`),
+          component: pageTemplate,
+          context: {
+            type: getType(node),
+          },
+        })
+      }
     }, sortedPages)
 
     // Create tag pages
@@ -131,7 +140,6 @@ exports.sourceNodes = ({ actions }) => {
       title: String!
       author: String
       date: Date! @dateformat
-      path: String!
       tags: [String!]
       excerpt: String
       coverImage: File @fileByRelativePath
