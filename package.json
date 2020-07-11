@@ -1,10 +1,9 @@
 {
-  "name": "gatsby-starter-hello-friend",
-  "description": "A simple starter for Gatsby. That's it.",
-  "version": "0.2.0",
-  "author": "Radek Kozieł <radoslaw.koziel@gmail.com>",
+  "name": "aditaja.my.id",
+  "description": "Aditya rahman personal blog.",
+  "version": "1.0.0",
+  "author": "Aditya Rahman <adityarahman032@gmail.com>",
   "keywords": [],
-  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby clean && gatsby develop",
@@ -57,9 +56,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/panr/gatsby-starter-hello-friend"
+    "url": "https://github.com/kudaliar032/aditaja-blog"
   },
   "bugs": {
-    "url": "https://github.com/panr/gatsby-starter-hello-friend/issues"
+    "url": "https://github.com/kudaliar032/aditaja-blog/issues"
   }
 }

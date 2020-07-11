@@ -7,7 +7,7 @@ const postCSSMixins = require('postcss-mixins')
 
 module.exports = {
   siteMetadata: {
-    title: `adiiitya blog`,
+    title: `adit blog`,
     description: `Aditya rahman personal blog`,
     copyrights: '',
     author: `Aditya Rahman`,
@@ -15,7 +15,7 @@ module.exports = {
       src: '',
       alt: '',
     },
-    logoText: 'adiiitya blog',
+    logoText: 'adit blog',
     defaultTheme: 'light',
     postsPerPage: 5,
     showMenuItems: 2,
@@ -107,7 +107,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-hello-friend`,
-        short_name: `adiiit-blog`,
+        short_name: `aditaja`,
         start_url: `/`,
         background_color: `#292a2d`,
         theme_color: `#292a2d`,
@@ -118,7 +118,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-disqus`,
       options: {
-        shortname: `adiiitya-blog`,
+        shortname: `aditaja.my.id`,
       },
     },
   ],
