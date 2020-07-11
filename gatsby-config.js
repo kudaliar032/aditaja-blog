@@ -118,7 +118,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-disqus`,
       options: {
-        shortname: `aditaja.my.id`,
+        shortname: `aditaja-my-id`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-172400413-1`,
       },
     },
   ],
