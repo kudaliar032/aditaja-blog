@@ -17,8 +17,8 @@ sections:
 upload_dir: blog-media
 public_path: ''
 front_matter_path: ''
-use_front_matter_path: false
-file_template: ":filename:"
+use_front_matter_path: true
+file_template: ":year::month::day::filename:"
 build:
   preview_output_directory: public
   install_dependencies_command: npm install
