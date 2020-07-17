@@ -4,16 +4,38 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
+  config:
+    required: true
+    min: 10
+    max: 100
 - type: datetime
   name: date
-  label: date
+  label: Date
+  config:
+    required: true
+  default: now
 - type: text
   name: path
-  label: path
-- type: text
-  name: author
-  label: author
+  label: URL Path
+  config:
+    required: true
+  hidden: false
+  default: ''
 - type: textarea
   name: excerpt
-  label: excerpt
+  label: Excerpt
+  default: ''
+- name: author
+  type: select
+  default: Aditya Rahman
+  config:
+    required: true
+    options:
+    - Aditya Rahman
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Author
