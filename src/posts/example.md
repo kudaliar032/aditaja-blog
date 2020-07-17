@@ -27,5 +27,7 @@ Sed a leo id risus venenatis vulputate non quis nulla. Aenean nisl quam, lacinia
 * Aenean facilisis ut ipsum condimentum ultrices.
 * Fusce sed metus vulputate, lobortis purus et, finibus purus. Suspendisse quis posuere lorem. Vivamus vulputate nec risus in pulvinar.
 
-    test code 1
-    test code 2
+      test code 1
+      test code 2
+
+  ![Upload image test](https://aditaja-bucket.s3-ap-southeast-1.amazonaws.com/blog-media/20200717-wp2308418.jpg)
