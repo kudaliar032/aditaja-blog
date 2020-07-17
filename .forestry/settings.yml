@@ -15,7 +15,7 @@ sections:
   create: all
   match: "**/*"
 upload_dir: blog-media
-public_path: blog-media
+public_path: https://aditaja-bucket.s3-ap-southeast-1.amazonaws.com/blog-media
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":year::month::day::filename:"
