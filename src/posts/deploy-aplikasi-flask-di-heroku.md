@@ -21,3 +21,15 @@ Untuk buat akun heroku, tinggal akses link berikut [https://signup.heroku.com/](
 Buka dulu aplikasi yang mau di deploy, jika belum ada bisa pakai contoh aplikasi sederhana berikut ini [simple flask](https://github.com/kudaliar032/simple-flask/tree/master). Pada aplikasi tersebut terdapat beberapa file seperti berikut
 
 ![](https://i.imgur.com/INgVNme.png)
+
+siapkan terlebih dahulu [virtualenv](https://pypi.org/project/virtualenv/) untuk menjalankan aplikasi dan mempersiapkan library yang diperlukan oleh heroku, dapat menggunakan perintah berikut
+
+    python -m venv venv/
+
+setelah dibuat, aktifkan virtualenv tersebut untuk menggunakannya dengan perintah
+
+    source venv/bin/activate
+
+install library `gunicorn` dengan perintah
+
+    pip install gunicorn
