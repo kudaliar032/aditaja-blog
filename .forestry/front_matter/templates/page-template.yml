@@ -13,3 +13,5 @@ fields:
   type: boolean
   label: Show Title
   default: false
+pages:
+- src/pages/about.md
