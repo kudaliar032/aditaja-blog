@@ -42,8 +42,8 @@ fields:
   label: URL Path
   config:
     required: true
-  hidden: false
-  default: ''
+  hidden: true
+  default: ":year::month::day:-:filename:"
 - type: textarea
   name: excerpt
   label: Excerpt
