@@ -7,6 +7,7 @@
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby clean && gatsby develop",
+    "forestry-dev": "gatsby develop",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },

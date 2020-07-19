@@ -12,7 +12,7 @@ const Post = ({
   id,
   title,
   date,
-  path,
+  slug,
   coverImage,
   author,
   excerpt,
@@ -35,7 +35,7 @@ const Post = ({
     <div className={style.post}>
       <div className={style.postContent}>
         <h1 className={style.title}>
-          {excerpt ? <Link to={path}>{title}</Link> : title}
+          {excerpt ? <Link to={slug}>{title}</Link> : title}
         </h1>
         <div className={style.meta}>
           {date} {author && <>— Written by {author}</>}
@@ -60,7 +60,7 @@ const Post = ({
         {excerpt ? (
           <>
             <p>{excerpt}</p>
-            <Link to={path} className={style.readMore}>
+            <Link to={slug} className={style.readMore}>
               Read more →
             </Link>
           </>
@@ -85,7 +85,7 @@ Post.propTypes = {
   id: PropTypes.string,
   title: PropTypes.string,
   date: PropTypes.string,
-  path: PropTypes.string,
+  slug: PropTypes.string,
   coverImage: PropTypes.object,
   author: PropTypes.string,
   excerpt: PropTypes.string,

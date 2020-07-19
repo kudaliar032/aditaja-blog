@@ -8,8 +8,11 @@ import Post from '../components/post'
 
 const BlogPostTemplate = ({ data, pageContext }) => {
   const {
-    frontmatter: { title, date, path, author, excerpt, tags },
+    frontmatter: { title, date, author, excerpt, tags },
     coverImage,
+    fields: {
+      slug,
+    },
     excerpt: autoExcerpt,
     id,
     html,
@@ -24,7 +27,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
         id={id}
         title={title}
         date={date}
-        path={path}
+        slug={slug}
         author={author}
         coverImage={coverImage}
         html={html}
@@ -48,11 +51,10 @@ BlogPostTemplate.propTypes = {
 
 export const pageQuery = graphql`
   query($path: String) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+    markdownRemark(fields: {slug: {eq: $path}}) {
       frontmatter {
         title
         date(formatString: "DD MMMM YYYY")
-        path
         author
         excerpt
         tags
@@ -63,6 +65,9 @@ export const pageQuery = graphql`
             ...GatsbyImageSharpFluid
           }
         }
+      }
+      fields {
+        slug
       }
       id
       html

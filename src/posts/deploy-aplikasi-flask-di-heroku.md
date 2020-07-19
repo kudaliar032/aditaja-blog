@@ -1,7 +1,6 @@
 ---
 title: Deploy Aplikasi Flask di Heroku
 date: 2020-07-11
-path: "/deploy-aplikasi-flask-di-heroku"
 author: Aditya Rahman
 tags:
 - heroku

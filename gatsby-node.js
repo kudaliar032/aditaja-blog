@@ -1,7 +1,7 @@
 const { paginate } = require('gatsby-awesome-pagination')
 const { forEach, uniq, filter, not, isNil, flatMap } = require('rambdax')
 const path = require('path')
-const { createRemoteFileNode } = require('gatsby-source-filesystem')
+const { createRemoteFileNode, createFilePath } = require('gatsby-source-filesystem')
 const { toKebabCase } = require('./src/helpers')
 
 const pageTypeRegex = /src\/(.*?)\//
@@ -29,6 +29,9 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
               tags
             }
             fileAbsolutePath
+            fields {
+              slug
+            }
           }
         }
       }
@@ -77,10 +80,10 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
       const isNextSameType = getType(node) === (next && getType(next))
       const isPreviousSameType = getType(node) === (previous && getType(previous))
 
-      // select page or post
+      // Generate page or post
       if (node.fileAbsolutePath.indexOf('/posts/') !== -1) {
         createPage({
-          path: path.basename(node.fileAbsolutePath, `.md`),
+          path: node.fields.slug,
           component: postTemplate,
           context: {
             type: getType(node),
@@ -90,7 +93,7 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
         })
       } else {
         createPage({
-          path: path.basename(node.fileAbsolutePath, `.md`),
+          path: node.fields.slug,
           component: pageTemplate,
           context: {
             type: getType(node),
@@ -152,27 +155,36 @@ exports.createSchemaCustomization = ({ actions }) => {
 
 exports.onCreateNode = async ({
   node,
-  actions: { createNode },
+  actions: { createNode, createNodeField },
   store,
   cache,
   createNodeId,
+  getNode,
 }) => {
-  if (
-    node.internal.type === 'MarkdownRemark' &&
-    node.frontmatter.coverImageUrl !== '' &&
-    node.frontmatter.coverImageUrl !== undefined
-  ) {
-    const fileNode = await createRemoteFileNode({
-      url: node.frontmatter.coverImageUrl,
-      parentNodeId: node.id,
-      createNode,
-      createNodeId,
-      cache,
-      store,
-    })
-
-    if (fileNode) {
-      node.coverImage___NODE = fileNode.id
+  if (node.internal.type === 'MarkdownRemark') {
+    // Generate cover image
+    const forCoverImage = node.frontmatter.coverImageUrl !== '' &&
+      node.frontmatter.coverImageUrl !== undefined
+    if (forCoverImage) {
+      const fileNode = await createRemoteFileNode({
+        url: node.frontmatter.coverImageUrl,
+        parentNodeId: node.id,
+        createNode,
+        createNodeId,
+        cache,
+        store,
+      })
+      if (fileNode) {
+        node.coverImage___NODE = fileNode.id
+      }
     }
+
+    // Generate slug
+    const slug = createFilePath({ node, getNode, trailingSlash: false })
+    createNodeField({
+      node,
+      name: `slug`,
+      value: slug,
+    })
   }
 }

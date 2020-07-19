@@ -1,7 +1,6 @@
 ---
-title: About
-path: /about
+title: None
 ---
 
 # Hi,
-Nama saya Aditya Rahman.
+### Nama saya Aditya Rahman.
