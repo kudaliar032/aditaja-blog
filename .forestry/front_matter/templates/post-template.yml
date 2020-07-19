@@ -1,5 +1,5 @@
 ---
-label: post-template
+label: Post Template
 hide_body: false
 fields:
 - name: coverImageUrl
