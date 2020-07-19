@@ -2,6 +2,11 @@
 label: post-template
 hide_body: false
 fields:
+- name: coverimage
+  type: file
+  config:
+    maxSize: 2
+  label: Cover Image
 - type: text
   name: title
   label: Title
@@ -9,6 +14,23 @@ fields:
     required: true
     min: 10
     max: 100
+- name: author
+  type: select
+  default: Aditya Rahman
+  config:
+    required: true
+    options:
+    - Aditya Rahman
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Author
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
 - type: datetime
   name: date
   label: Date
@@ -26,16 +48,3 @@ fields:
   name: excerpt
   label: Excerpt
   default: ''
-- name: author
-  type: select
-  default: Aditya Rahman
-  config:
-    required: true
-    options:
-    - Aditya Rahman
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Author
