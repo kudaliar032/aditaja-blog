@@ -1,0 +1,41 @@
+---
+label: post-template
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+    min: 10
+    max: 100
+- type: datetime
+  name: date
+  label: Date
+  config:
+    required: true
+  default: now
+- type: text
+  name: path
+  label: URL Path
+  config:
+    required: true
+  hidden: false
+  default: ''
+- type: textarea
+  name: excerpt
+  label: Excerpt
+  default: ''
+- name: author
+  type: select
+  default: Aditya Rahman
+  config:
+    required: true
+    options:
+    - Aditya Rahman
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Author
