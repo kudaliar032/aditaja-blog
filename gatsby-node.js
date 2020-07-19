@@ -1,6 +1,7 @@
 const { paginate } = require('gatsby-awesome-pagination')
 const { forEach, uniq, filter, not, isNil, flatMap } = require('rambdax')
 const path = require('path')
+const { createRemoteFileNode } = require('gatsby-source-filesystem')
 const { toKebabCase } = require('./src/helpers')
 
 const pageTypeRegex = /src\/(.*?)\//
@@ -129,21 +130,68 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
   })
 }
 
-exports.sourceNodes = ({ actions }) => {
+exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
-  const typeDefs = `
-    type MarkdownRemark implements Node {
-      frontmatter: Frontmatter!
-    }
 
+  createTypes(`
+    type MarkdownRemark implements Node {
+      frontmatter: Frontmatter
+      coverImage: File @link(from: "coverImage___NODE")
+    }
+    
     type Frontmatter {
       title: String!
       author: String
       date: Date! @dateformat
       tags: [String!]
       excerpt: String
-      coverImage: File @fileByRelativePath
+      coverImageUrl: String
     }
-  `
-  createTypes(typeDefs)
+  `)
 }
+
+exports.onCreateNode = async ({
+  node,
+  actions: { createNode },
+  store,
+  cache,
+  createNodeId,
+}) => {
+  if (
+    node.internal.type === 'MarkdownRemark' &&
+    node.frontmatter.coverImageUrl !== null
+  ) {
+    const fileNode = await createRemoteFileNode({
+      url: node.frontmatter.coverImageUrl,
+      parentNodeId: node.id,
+      createNode,
+      createNodeId,
+      cache,
+      store,
+    })
+
+    if (fileNode) {
+      node.coverImage___NODE = fileNode.id
+    }
+  }
+}
+
+// exports.sourceNodes = ({ actions }) => {
+//   const { createTypes } = actions
+//   const typeDefs = `
+//     type MarkdownRemark implements Node {
+//       frontmatter: Frontmatter!
+//       coverImage: File @link(from: "coverImage___NODE")
+//     }
+//
+//     type Frontmatter {
+//       title: String!
+//       author: String
+//       date: Date! @dateformat
+//       tags: [String!]
+//       excerpt: String
+//       coverImageUrl: String
+//     }
+//   `
+//   createTypes(typeDefs)
+// }

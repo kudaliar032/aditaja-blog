@@ -8,7 +8,8 @@ import Page from '../components/page'
 
 const BlogPageTemplate = ({ data, pageContext }) => {
   const {
-    frontmatter: { title, date, path, author, coverImage, excerpt, tags },
+    frontmatter: { title, date, path, author, excerpt, tags },
+    coverImage,
     excerpt: autoExcerpt,
     id,
     html,
@@ -54,11 +55,11 @@ export const pageQuery = graphql`
         author
         excerpt
         tags
-        coverImage {
-          childImageSharp {
-            fluid(maxWidth: 800) {
-              ...GatsbyImageSharpFluid
-            }
+      }
+      coverImage {
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
