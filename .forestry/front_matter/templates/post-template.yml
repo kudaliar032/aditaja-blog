@@ -42,7 +42,7 @@ fields:
   label: URL Path
   config:
     required: true
-  hidden: true
+  hidden: false
   default: ":year::month::day:-:filename:"
 - type: textarea
   name: excerpt
