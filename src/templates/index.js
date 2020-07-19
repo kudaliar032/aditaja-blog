@@ -30,6 +30,7 @@ const Index = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
             fields: {
               slug,
             },
+            timeToRead,
           } = node
 
           return (
@@ -42,6 +43,7 @@ const Index = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
               coverImage={coverImage}
               tags={tags}
               excerpt={excerpt || autoExcerpt}
+              timeToRead={timeToRead}
             />
           )
         })}
@@ -93,7 +95,8 @@ export const postsQuery = graphql`
           }
           fields {
             slug    
-          }  
+          }
+          timeToRead  
         }
       }
     }

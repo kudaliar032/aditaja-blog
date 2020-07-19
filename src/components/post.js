@@ -20,6 +20,7 @@ const Post = ({
   html,
   previousPost,
   nextPost,
+  timeToRead,
 }) => {
   const previousPath = previousPost && previousPost.fields.slug
   const previousLabel = previousPost && previousPost.frontmatter.title
@@ -38,7 +39,7 @@ const Post = ({
           {excerpt ? <Link to={slug}>{title}</Link> : title}
         </h1>
         <div className={style.meta}>
-          {date} {author && <>— Written by {author}</>}
+          {date} · {timeToRead} min read {author && <>— Written by {author}</>}
           {tags ? (
             <div className={style.tags}>
               {tags.map(tag => (
@@ -94,6 +95,7 @@ Post.propTypes = {
   tags: PropTypes.arrayOf(PropTypes.string),
   previousPost: PropTypes.object,
   nextPost: PropTypes.object,
+  timeToRead: PropTypes.number,
 }
 
 export default Post
