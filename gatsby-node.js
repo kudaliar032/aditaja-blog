@@ -159,7 +159,8 @@ exports.onCreateNode = async ({
 }) => {
   if (
     node.internal.type === 'MarkdownRemark' &&
-    node.frontmatter.coverImageUrl !== null
+    node.frontmatter.coverImageUrl !== '' &&
+    node.frontmatter.coverImageUrl !== undefined
   ) {
     const fileNode = await createRemoteFileNode({
       url: node.frontmatter.coverImageUrl,
@@ -175,23 +176,3 @@ exports.onCreateNode = async ({
     }
   }
 }
-
-// exports.sourceNodes = ({ actions }) => {
-//   const { createTypes } = actions
-//   const typeDefs = `
-//     type MarkdownRemark implements Node {
-//       frontmatter: Frontmatter!
-//       coverImage: File @link(from: "coverImage___NODE")
-//     }
-//
-//     type Frontmatter {
-//       title: String!
-//       author: String
-//       date: Date! @dateformat
-//       tags: [String!]
-//       excerpt: String
-//       coverImageUrl: String
-//     }
-//   `
-//   createTypes(typeDefs)
-// }

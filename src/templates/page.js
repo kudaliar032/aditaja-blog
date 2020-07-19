@@ -8,9 +8,9 @@ import Page from '../components/page'
 
 const BlogPageTemplate = ({ data, pageContext }) => {
   const {
-    frontmatter: { title, date, path, author, excerpt, tags },
+    frontmatter: { title, path },
     coverImage,
-    excerpt: autoExcerpt,
+    autoExcerpt,
     id,
     html,
   } = data.markdownRemark
@@ -18,16 +18,13 @@ const BlogPageTemplate = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <SEO title={title} description={excerpt || autoExcerpt} />
+      <SEO title={title} description={autoExcerpt} />
       <Page
         key={id}
         title={title}
-        date={date}
         path={path}
-        author={author}
         coverImage={coverImage}
         html={html}
-        tags={tags}
         previousPost={previous}
         nextPost={next}
       />
@@ -50,11 +47,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       frontmatter {
         title
-        date(formatString: "DD MMMM YYYY")
         path
-        author
-        excerpt
-        tags
       }
       coverImage {
         childImageSharp {
@@ -65,7 +58,6 @@ export const pageQuery = graphql`
       }
       id
       html
-      excerpt
     }
   }
 `
