@@ -2,7 +2,7 @@
 label: post-template
 hide_body: false
 fields:
-- name: coverimage
+- name: coverImage
   type: file
   config:
     maxSize: 2
