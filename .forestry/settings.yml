@@ -12,8 +12,10 @@ sections:
 - type: directory
   path: src/posts
   label: Posts
-  create: all
+  create: documents
   match: "**/*"
+  templates:
+  - post-template
 upload_dir: blog-media
 public_path: https://aditaja-bucket.s3-ap-southeast-1.amazonaws.com/blog-media
 front_matter_path: ''
