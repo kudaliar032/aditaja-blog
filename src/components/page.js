@@ -5,11 +5,12 @@ import style from '../styles/post.module.css'
 
 const Page = ({
   title,
+  showTitle,
   html,
 }) => (
   <div className={style.post}>
     <div className={style.postContent}>
-      {title !== 'None' && (<h1 className={style.title}>{title}</h1>)}
+      {showTitle && (<h1 className={style.title}>{title}</h1>)}
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </div>
   </div>
@@ -17,6 +18,7 @@ const Page = ({
 
 Page.propTypes = {
   title: PropTypes.string,
+  showTitle: PropTypes.bool,
   html: PropTypes.string,
 }
 

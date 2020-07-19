@@ -8,7 +8,7 @@ import Page from '../components/page'
 
 const BlogPageTemplate = ({ data }) => {
   const {
-    frontmatter: { title },
+    frontmatter: { title, showTitle },
     autoExcerpt,
     id,
     html,
@@ -20,6 +20,7 @@ const BlogPageTemplate = ({ data }) => {
       <Page
         key={id}
         title={title}
+        showTitle={showTitle}
         html={html}
       />
     </Layout>
@@ -37,6 +38,7 @@ export const pageQuery = graphql`
     markdownRemark(fields: {slug: {eq: $path}}) {
       frontmatter {
         title
+        showTitle  
       }
       id
       html
