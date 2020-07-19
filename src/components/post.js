@@ -21,9 +21,9 @@ const Post = ({
   previousPost,
   nextPost,
 }) => {
-  const previousPath = previousPost && previousPost.frontmatter.path
+  const previousPath = previousPost && previousPost.fields.slug
   const previousLabel = previousPost && previousPost.frontmatter.title
-  const nextPath = nextPost && nextPost.frontmatter.path
+  const nextPath = nextPost && nextPost.fields.slug
   const nextLabel = nextPost && nextPost.frontmatter.title
 
   const disqusConfig = {
@@ -73,6 +73,7 @@ const Post = ({
               nextPath={nextPath}
               nextLabel={nextLabel}
             />
+            <hr />
             <Disqus config={disqusConfig} />
           </>
         )}
