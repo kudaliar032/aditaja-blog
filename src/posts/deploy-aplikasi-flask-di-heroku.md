@@ -6,7 +6,7 @@ tags:
 - heroku
 - python
 - flask
-coverImageUrl: http://aditaja-bucket.s3-ap-southeast-1.amazonaws.com/blog-media/20200717-wp2308418.jpg
+coverImageUrl: https://aditaja-bucket.s3-ap-southeast-1.amazonaws.com/blog-media/20200719-heroku.png
 excerpt: ''
 
 ---
