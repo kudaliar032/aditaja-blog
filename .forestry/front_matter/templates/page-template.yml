@@ -7,7 +7,7 @@ fields:
   label: Title
   config:
     required: true
-    min: 0
+    min: 5
     max: 100
 - name: showTitle
   type: boolean
