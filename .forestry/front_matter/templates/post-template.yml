@@ -37,13 +37,6 @@ fields:
   config:
     required: true
   default: now
-- type: text
-  name: path
-  label: URL Path
-  config:
-    required: true
-  hidden: false
-  default: ":year::month::day:-:filename:"
 - type: textarea
   name: excerpt
   label: Excerpt
