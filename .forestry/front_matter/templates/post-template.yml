@@ -50,3 +50,4 @@ fields:
   default: ''
 pages:
 - src/posts/deploy-aplikasi-flask-di-heroku.md
+- src/posts/test-membuat-post-baru.md
