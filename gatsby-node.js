@@ -19,8 +19,9 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
   return graphql(`
     {
       allMarkdownRemark(
-        sort: { fields: [frontmatter___date], order: DESC }
+        sort: {fields: [frontmatter___date], order: DESC}
         limit: 1000
+        filter: {frontmatter: {publish: {eq: true}}}
       ) {
         edges {
           node {
@@ -149,6 +150,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       tags: [String!]
       excerpt: String
       coverImageUrl: String
+      publish: Boolean
     }
   `)
 }
