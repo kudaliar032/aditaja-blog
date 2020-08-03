@@ -13,5 +13,8 @@ fields:
   type: boolean
   label: Show Title
   default: false
+- name: publish
+  type: boolean
+  label: Publish
 pages:
 - src/pages/about.md
