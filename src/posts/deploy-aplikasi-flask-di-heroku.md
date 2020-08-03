@@ -8,6 +8,7 @@ tags:
 - flask
 coverImageUrl: https://aditaja-bucket.s3-ap-southeast-1.amazonaws.com/blog-media/20200719-heroku.png
 excerpt: ''
+publish: true
 
 ---
 Hallo semuanya, saya ingin membagikan sedikit cara untuk mendeploy aplikasi python dengan framework flask di heroku, langsung saja seperti berikut

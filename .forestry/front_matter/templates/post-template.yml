@@ -41,6 +41,10 @@ fields:
   name: excerpt
   label: Excerpt
   default: ''
+- name: publish
+  type: boolean
+  label: Publish
+  default: false
 pages:
 - src/posts/autoscale-gitlab-runner-menggunakan-docker-machine-digitalocean.md
 - src/posts/deploy-aplikasi-flask-di-heroku.md
