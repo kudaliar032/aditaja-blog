@@ -19,7 +19,6 @@ const BlogPostTemplate = ({ data, pageContext }) => {
     html,
   } = data.markdownRemark
   const { next, previous } = pageContext
-
   return (
     <Layout>
       <SEO title={title} description={excerpt || autoExcerpt} />

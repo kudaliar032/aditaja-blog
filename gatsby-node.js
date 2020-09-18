@@ -76,13 +76,12 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
 
     // Create each markdown page and post
     forEach(({ node }, index) => {
-      const previous = index === 0 ? null : sortedPages[index - 1].node
-      const next = index === sortedPages.length - 1 ? null : sortedPages[index + 1].node
-      const isNextSameType = getType(node) === (next && getType(next))
-      const isPreviousSameType = getType(node) === (previous && getType(previous))
-
-      // Generate page or post
+      // Generate posts
       if (node.fileAbsolutePath.indexOf('/posts/') !== -1) {
+        const previous = index === 0 ? null : sortedPages[index - 1].node
+        const next = index === sortedPages.length - 1 ? null : sortedPages[index + 1].node
+        const isNextSameType = getType(node) === (next && getType(next))
+        const isPreviousSameType = getType(node) === (previous && getType(previous))
         createPage({
           path: node.fields.slug,
           component: postTemplate,
@@ -92,6 +91,7 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
             previous: isPreviousSameType ? previous : null,
           },
         })
+      // Generate pages
       } else {
         createPage({
           path: node.fields.slug,
