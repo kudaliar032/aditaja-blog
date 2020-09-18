@@ -32,8 +32,8 @@ pre[class*="language-"] > code {
 /* Code blocks */
 pre[class*="language-"] {
 	padding: 1em;
-	margin: .5em 0;
-	overflow: auto;
+	margin: 2em 0;
+	overflow: scroll;
 }
 
 pre[class*="language-"] {
