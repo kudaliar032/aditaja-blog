@@ -9,7 +9,7 @@ date: 2020-09-18T19:37:34+07:00
 coverImageUrl: https://aditaja-bucket.s3-ap-southeast-1.amazonaws.com/blog-media/20200918-gitlab-chatops-header.png
 title: GitLab ChatOps
 excerpt: ''
-publish: false
+publish: true
 
 ---
 Hallo, saya ingin membagikan sesuatu yang baru saja saya coba pelajari yaitu GitLab ChatOps. Sebelumnya ChatOps itu apa sih? Menurut dari beberapa artikel di internet yang saya baca. Yang kemudian coba saya simpulkan, ChatOps merupakan.
@@ -18,13 +18,13 @@ Hallo, saya ingin membagikan sesuatu yang baru saja saya coba pelajari yaitu Git
 
 Dengan adanya model ChatOps ini kita dapat menjadikan alur kerja lebih terpusat dan lebih efektif dengan mengandalkan aplikasi obrolan populer seperti Slack, Telegram, HipChat, Mattermost, dan sebagainya. Selain itu, kita juga dapat membangun ruang chat kita sendiri menggunakan aplikasi sumber terbuka seperti Hubot, Lita, dan Err.
 
-Untuk mendukung perkembangan model ChatOps tersebut maka GitLab juga mengeluarkan fiturnya sendiri yang bisa kita gunakan. Fitur tersebut bernama GitLab ChatOps, GitLab ChatOps sebelumnya adalah salah satu fitur dari GitLab Ultimate, namun semenjak GitLab versi 11.9 dibuka untuk umum.
+Untuk mendukung perkembangan model ChatOps tersebut maka GitLab juga mengeluarkan fiturnya sendiri yang bisa kita gunakan. Fitur tersebut bernama GitLab ChatOps, GitLab ChatOps sebelumnya adalah salah satu fitur dari GitLab Ultimate, namun semenjak [GitLab versi 11.9 dibuka untuk umum](https://about.gitlab.com/blog/2018/12/24/gitlab-chatops-will-become-available-to-everyone/).
 
-Menggunakan GitLab ChatOps kita dapat melakukan interaksi dengan GitLab CI/CD menggunakan layanan obrolan seperti Slack. Sehingga kita dapat melakukan interaksi dengan urusan operation melalui obrolan tersebut, seperti melakukan release, deploy, monitoring, dan sebagainya.
+Dengan menggunakan GitLab ChatOps kita dapat melakukan interaksi dengan GitLab CI/CD menggunakan layanan obrolan seperti Slack. Sehingga kita dapat mengerjakan pekerjaan operation kita melalui obrolan tersebut, seperti melakukan release, deploy, monitoring, dan sebagainya.
 
 ## Bagaimana GitLab ChatOps Bekerja
 
-Perlu diketahui bahwa GitLab ChatOps sendiri dibangun menggunakan GitLab CI/CD dan Slack Slash Commands. GitLab ChatOps menyediakan perintah `run` pada slack slash command dengan dua buah argumen, yaitu
+Perlu diketahui bahwa GitLab ChatOps sendiri dibangun menggunakan [GitLab CI/CD](https://docs.gitlab.com/ee/ci/) dan [Slack Slash Commands](https://docs.gitlab.com/ee/user/project/integrations/slack_slash_commands.html). GitLab ChatOps menyediakan perintah `run` pada slack slash command dengan dua buah argumen, yaitu
 
 * `<job name>` yang akan dijalankan
 * `<job argumen>` yang akan dikirimkan ke job
@@ -43,19 +43,19 @@ Pengguna wajib memiliki hak akses `Developer` atau lebih apabila ingin menjalank
 
 ## Kelebihan dan Kekurangan GitLab ChatOps
 
-Tentunya GitLab ChatOps memiliki kelebihan dan kekurangan, berikut ini beberapa kelebihan dan kekurangan dari GitLab ChatOps menurut penulis.
+Tentunya GitLab ChatOps memiliki kelebihan dan kekurangan, berikut ini beberapa kelebihan dan kekurangan dari GitLab ChatOps menurut saya pribadi.
 
 ### Kelebihan GitLab ChatOps
 1. Dapat diintegrasikan dengan baik dengan layanan-layanan GitLab lainnya
 2. Penggunaan dari GitLab ChatOps sangat mudah
-3. Performa teruji karena juga digunakan oleh GitLab pada production
+3. Digunakan oleh GitLab pada production
 
 ### Kekurangan GitLab ChatOps
 1. Layanan obrolan yang didukung baru Slack dan Mattermost
 2. Masih terdapat keterbatasan perintah
 
-## Alasan Memilih GitLab ChatOps
-Menurut penulis berikut beberapa alasan yang menjadikan kita memilih untuk menggunakan GitLab ChatOps saat ingin mengimplementasikan ChatOps
+## Kapan Menggunakan GitLab ChatOps
+Saat hendak menerapkan model ChatOps pada pekerjaan kita, menurut saya berikut adalah beberapa poin yang dapat dijadikan pertimbangan untuk memilih GitLab ChatOps
 
 1. Pekerjaan yang kita kerjakan telah terpusat dalam satu layanan chat yaitu Slack atau Mattermost
 2. Sudah menggunakan layanan-layanan GitLab
@@ -104,7 +104,7 @@ build:apk:
 
 Pada konfigurasi GitLab CI/CD di atas, yang terpenting agar dapat dieksekusi oleh GitLab ChatOps adalah keberadaan kondisi only yang memuat chat, yang dapat diartikan bahwa job tersebut hanya akan dieksekusi oleh GitLab ChatOps. Kalau konfigurasi GitLab CI/CD yang lain tinggal menyesuaikan dengan apa yang hendak dilakukan pada job tersebut.
 
-Selain itu pada bagian script juga terdapat echo yang berisikan section untuk menentukan pesan apa yang akan dikirimkan atau menjadi balasan dari GitLab di ruang obrolan. Pada contoh tersebut nantinya job akan mengirimkan pesan yang kurang lebih seperti berikut ini `Download APK build job #745220970 from here`. Untuk formatting chat secara lengkap terdapat pada dokumentasi [Formatting text](https://api.slack.com/reference/surfaces/formatting).
+Selain itu pada bagian script juga terdapat echo yang berisikan [section](https://docs.gitlab.com/ee/ci/pipelines/index.html#custom-collapsible-sections) untuk menentukan pesan apa yang akan dikirimkan atau menjadi balasan dari GitLab di ruang obrolan. Pada contoh tersebut nantinya job akan mengirimkan pesan yang kurang lebih seperti berikut ini `Download APK build job #745220970 from here`. Untuk formatting chat secara lengkap terdapat pada dokumentasi [Formatting text](https://api.slack.com/reference/surfaces/formatting).
 
 ### Integrasi GitLab dan Slack
 
