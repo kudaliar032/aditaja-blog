@@ -151,3 +151,6 @@ ChatOps adalah salah satu model kolaborasi project yang memanfaatkan layanan obr
 Salah satu layanan ChatOps adalah GitLab ChatOps dimana untuk penggunaannya sangat mudah, kita hanya perlu menghubungkan GitLab dengan Slack, kemudian membuat job khusus untuk dijalankan oleh Slack. Dan kita hanya perlu mengirimkan perintah dengan format tertentu untuk menjalankan job tersebut di dalam ruang obrolan. Apabila job selesai dijalankan maka hasil dari job tersebut dapat dikirimkan kembali ke obrolan tempat menjalankan perintah tersebut.
 
 Cukup sekian tulisan ini, `terima kasih` telah menyempatkan untuk membaca, `semoga bermanfaat`. See u...
+
+## Video Demonstrasi
+`video: https://www.youtube.com/watch?v=q5NqCXOnqBo&t=7s`
