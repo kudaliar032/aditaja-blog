@@ -152,4 +152,4 @@ Salah satu layanan ChatOps adalah GitLab ChatOps dimana untuk penggunaannya sang
 Cukup sekian tulisan ini, `terima kasih` telah menyempatkan untuk membaca, `semoga bermanfaat`. See u...
 
 ## Video Demonstrasi
-`video: https://www.youtube.com/watch?v=q5NqCXOnqBo&t=7s`
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/q5NqCXOnqBo?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
