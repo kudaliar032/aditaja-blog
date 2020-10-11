@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'aditaja',
+  title: 'aditaja.my.id',
   tagline: 'aditaja.my.id',
   url: 'https://aditaja.my.id',
   baseUrl: '/',
@@ -9,14 +9,21 @@ module.exports = {
   projectName: 'aditaja', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'aditaja',
+      title: 'aditaja.my.id',
       logo: {
-        alt: 'aditaja',
+        alt: 'aditaja.my.id',
         src: 'img/logo.svg',
       },
+      items: [
+        {
+          label: "About",
+          to: "about",
+          position: "right"
+        }
+      ]
     },
     footer: {
-      copyright: `Copyright © ${new Date().getFullYear()} aditaja. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} aditaja.my.id &bull; Built with Docusaurus.`,
     },
   },
   presets: [
