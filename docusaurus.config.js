@@ -18,11 +18,6 @@ module.exports = {
     footer: {
       copyright: `Copyright © ${new Date().getFullYear()} aditaja. Built with Docusaurus.`,
     },
-    algolia: {
-      apiKey: '9bdc80190399aca49e0515c9b870d09b',
-      indexName: 'aditaja-docusaurus',
-      searchParameters: {}, // Optional (if provided by Algolia)
-    },
   },
   presets: [
     [
@@ -38,4 +33,7 @@ module.exports = {
       },
     ],
   ],
+  plugins: [
+    require.resolve('docusaurus-lunr-search')
+  ]
 };
