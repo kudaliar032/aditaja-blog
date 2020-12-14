@@ -8,6 +8,11 @@ module.exports = {
   organizationName: 'kudaliar032', // Usually your GitHub org/user name.
   projectName: 'aditaja', // Usually your repo name.
   themeConfig: {
+    algolia: {
+      apiKey: 'ac45017a48f395fd401085fd2596396f',
+      appId: 'KFE723IYI9',
+      indexName: 'aditaja-blog',
+    },
     navbar: {
       title: 'aditaja.my.id',
       logo: {
@@ -32,7 +37,7 @@ module.exports = {
       {
         blog: {
           showReadingTime: true,
-          routeBasePath: '/'
+          routeBasePath: '/blog'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -40,7 +45,4 @@ module.exports = {
       },
     ],
   ],
-  plugins: [
-    require.resolve('docusaurus-lunr-search')
-  ]
 };
