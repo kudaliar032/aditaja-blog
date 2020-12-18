@@ -9,7 +9,7 @@ tags:
 - packet tracer
 ---
 
-<img src="https://res.cloudinary.com/kudaliar032/image/upload/v1608099836/aditaja-blog/headers/5_ejtz3s.jpg" width="100%" style={{marginBottom: "25px"}} />
+<img src="https://res.cloudinary.com/kudaliar032/image/upload/v1608280613/aditaja-blog/headers/soal-lks_x5b6ba.jpg" width="100%" style={{marginBottom: "25px"}} />
 
 Berikut ini saya membagikan soal LKS untuk bidang lomba IT Network System Administrator/IT Networking Support untuk tingkat nasional ke-24 yang di adakan pada Mei 2016 di Malang, Jawa Timur:
 
