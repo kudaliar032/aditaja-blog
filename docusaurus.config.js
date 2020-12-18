@@ -28,7 +28,7 @@ module.exports = {
       ]
     },
     footer: {
-      copyright: `Copyright © ${new Date().getFullYear()} aditaja.my.id &bull; Built with 🦖.`
+      copyright: `Copyright © ${new Date().getFullYear()} <a href="https://aditaja.my.id">aditaja.my.id</a> &bull; Built with <a href="https://v2.docusaurus.io">🦖</a>.`
     },
   },
   presets: [
