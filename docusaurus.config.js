@@ -5,8 +5,8 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'kudaliar032', // Usually your GitHub org/user name.
-  projectName: 'aditaja', // Usually your repo name.
+  organizationName: 'kudaliar032',
+  projectName: 'aditaja-blog',
   themeConfig: {
     algolia: {
       apiKey: 'ac45017a48f395fd401085fd2596396f',
@@ -28,7 +28,7 @@ module.exports = {
       ]
     },
     footer: {
-      copyright: `Copyright © ${new Date().getFullYear()} aditaja.my.id &bull; Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} aditaja.my.id &bull; Built with 🦖.`
     },
   },
   presets: [
@@ -37,12 +37,12 @@ module.exports = {
       {
         blog: {
           showReadingTime: true,
-          routeBasePath: '/blog'
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      },
-    ],
-  ],
-};
+          blogSidebarTitle: 'Recent Posts',
+          feedOptions: {
+            type: 'all'
+          }
+        }
+      }
+    ]
+  ]
+}
