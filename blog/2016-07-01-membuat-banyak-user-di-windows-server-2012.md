@@ -5,7 +5,7 @@ tags:
 - lks
 ---
 
-<img src="https://res.cloudinary.com/kudaliar032/image/upload/v1608099986/aditaja-blog/headers/membuat-banyak-user_k42fuz.jpg" width="100%" style={{marginBottom: "25px"}}/>
+<img src="https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/membuat-banyak-user_k42fuz.webp" width="100%" style={{marginBottom: "25px"}}/>
 
 Disini saya membagiakan bagaimana cara untuk membuat user sekaligus banyak di Windows Server 2012. Untuk caranya dapat diliat dari video di bawah ini:
 

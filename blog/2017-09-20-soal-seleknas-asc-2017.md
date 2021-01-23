@@ -8,7 +8,7 @@ tags:
 - packet tracer
 ---
 
-<img src="https://res.cloudinary.com/kudaliar032/image/upload/v1608100408/aditaja-blog/headers/21414629_10154605780726612_3067913541061812293_o_fl6wqd.jpg" width="100%" style={{marginBottom: "25px"}} />
+<img src="https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/21414629_10154605780726612_3067913541061812293_o_fl6wqd.webp" width="100%" style={{marginBottom: "25px"}} />
 
 Selamat sore, saya kali ini ingin membagikan soal-soal dari seleksi nasional ASC tahun 2017 yang dilaksanakan beberapa waktu lalu. Soal-soalnya sendiri terdiri dari 3 Modul yang mana soal-soalnya membahas mengenai Linux, Windows dan Packet Tracer. Langsung saja berikut soal-soalnya:
 

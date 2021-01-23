@@ -6,7 +6,7 @@ tags:
 - vagrant
 ---
 
-<img src="https://res.cloudinary.com/kudaliar032/image/upload/v1608275048/aditaja-blog/headers/vagrant-libvirt_o3tfde.png" width="100%" style={{marginBottom: "25px"}} />
+<img src="https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/vagrant-libvirt_o3tfde.webp" width="100%" style={{marginBottom: "25px"}} />
 
 Halo, saya ingin sedikit mencoret-coret mengenai cara yang saya gunakan untuk menginstall dan menjalankan vagrant pada laptop saya. Dimana saat ini saya menggunakan sistem operasi Fedora 33, di sini saya akan menggunakan Libvirt sebagai provider dari vagrantnya. Diambil dari situsnya, vagrant adalah
 
@@ -133,7 +133,7 @@ Perintah `vagrant init` untuk membuat sebuah file `Vagrantfile` secara otomatis,
 
 Terakhir, untuk menjalankan mesin, kita hanya perlu menjalankan perintah `vagrant up`. Jika dimintai password seperti berikut, masukan saja password user anda
 
-![](https://i.imgur.com/oF5kUzA.png)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-12-18-menginstall-dan-menjalankan-vagrant-pada-fedora-dengan-libvirt/oF5kUzA_nnkfpi.webp)
 
 ```bash
 kudaliar@konidin[/m/h/l/v/vagrant-test] > vagrant up     

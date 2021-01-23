@@ -6,7 +6,7 @@ tags:
 - server
 ---
 
-<img src="https://res.cloudinary.com/kudaliar032/image/upload/v1608992213/aditaja-blog/headers/2020-12-26-membuat-openvpn-server-menggunakan-docker_wh2ilu.png" width="100%" style={{marginBottom: "25px"}}/>
+<img src="https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/2020-12-26-membuat-openvpn-server-menggunakan-docker_wh2ilu.webp" width="100%" style={{marginBottom: "25px"}}/>
 
 Hallo, jadi ceritanya beberapa lalu saya dapat permintaan untuk melakukan deployment server. Dimana untuk keamannya diminta untuk mempersiapkan VPN yang digunakan saat hendak mengakses server-server yang ada, dan server-server tersebut hanya bisa diakses menggunakan VPN tersebut jadi harapannya lebih aman. Ini openingnya kok aneh ya, wkwkwkk.
 
@@ -112,7 +112,7 @@ docker-compose run --rm openvpn ovpn_otp_user aditya
 
 Nantinya akan muncul QR Code yang dapat discan menggunakan Google Authenticator dan emergency code untuk akun yang digenerate. Silahkan scan QR Code tersebut dan simpan emergency code dengan baik. Contohnya seperti ini
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1608989587/aditaja-blog/2020-12-26-membuat-openvpn-server-menggunakan-docker/gnome-shell-screenshot-AI8JW0_egpvji.png)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-12-26-membuat-openvpn-server-menggunakan-docker/gnome-shell-screenshot-AI8JW0_egpvji.webp)
 
 :::danger Perhatian
 Harap amankan QR Code, URL QR Code, dan Emergency Code untuk anda sendiri
@@ -134,15 +134,15 @@ Download, dan jalankan pada client. Jangan lupa untuk mengset username dan passw
 
 Buka menu `Settings` > `Netowork` > `VPN` > `+`
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1608990562/aditaja-blog/2020-12-26-membuat-openvpn-server-menggunakan-docker/fedora-33-ovpn-1_ltrxqx.png)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-12-26-membuat-openvpn-server-menggunakan-docker/fedora-33-ovpn-1_ltrxqx.webp)
 
 Klik `Import from file...` dan cari file `.ovpn` yang telah diunduh sebelumnya. Isikan `User name` dengan username yang digunakan, `Password` ubah menjadi `Ask for this password every time`, dan `User key password` dengan passphrase yang digunakan saat mengenerate sertifikat client.
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1608990562/aditaja-blog/2020-12-26-membuat-openvpn-server-menggunakan-docker/fedora-33-ovpn-2_mxtubf.png)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-12-26-membuat-openvpn-server-menggunakan-docker/fedora-33-ovpn-2_mxtubf.webp)
 
 Hubungkan VPN, nantinya akan dimintai password, silahkan masukan 6 digit angka yang dihasilkan oleh Google Authenticator.
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1608990834/aditaja-blog/2020-12-26-membuat-openvpn-server-menggunakan-docker/Screenshot_from_2020-12-26_21-50-42_be9ikx.png)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-12-26-membuat-openvpn-server-menggunakan-docker/Screenshot_from_2020-12-26_21-50-42_be9ikx.webp)
 
 Sampai sini dulu, terima kasih untuk kalian-kalian yang telah membaca catatan saya ini.
 

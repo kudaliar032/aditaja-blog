@@ -6,7 +6,7 @@ tags:
 - linux
 ---
 
-![Menghubungkan Koneksi WiFi pada Debian 10 "Buster" Mode Text](https://i.imgur.com/BS0ofve.jpg)
+![Menghubungkan Koneksi WiFi pada Debian 10 "Buster" Mode Text](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/BS0ofve_rfnfek.webp)
 
 Hallo, saya kali ini mau nulis-nulis dikit mengenai cara untuk menghubungkan koneksi wifi pada sistem operasi Debian 10 "Buster", langsung lah pendek saja.
 
@@ -16,11 +16,11 @@ Login ke dalam sistem operasi anda, masuk sebagai user root karena kita akan mem
 
 Cari tahu terlebih dahulu nama interface wireless anda, dapat menggunakan perintah `ip a` atau `iw dev`. Seperti contoh berikut, dimana nama interface saya adalah `wlp5s0`. Diingat kalau perlu dicatat, pastikan interface tersebut sudah UP dengan menggunakan perintah `ip link set wlp5s0 up`
 
-![](https://i.imgur.com/zR8dHFS.png)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-12-14-menghubungkan-wifi-pada-debian-cli/zR8dHFS_jvnq7o.webp)
 
 Cari tahu nama wifinya/SSID dari wifi menggunakan perintah `iwlist wlp5s0 scan | grep ESSID`. Kalau anda sudah tau tidak perlu menjalankan perintah ini.
 
-![](https://i.imgur.com/HKFTuaj.png)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-12-14-menghubungkan-wifi-pada-debian-cli/HKFTuaj_bmfd8i.webp)
 
 Disini terdapat dua wifi yaitu `XXX XXX` dan `YYY YYY`. Anggap saja kita akan menghubungkan ke `XXX XXX`. Selanjutnya kita update konfigurasi interfacesnya dengan menyunting file `/etc/network/interfaces`.
 
@@ -44,6 +44,6 @@ Untuk bagian `allow-hotplug wlp5s0` berguna agar wifi terhubung saat sistem oper
 
 Terakhir untuk memastikan semua benar, hubungkan dengan mengaktifkan interface dengan perintah `ifup wlp5s0` dan pastikan wifi dapat alamat IP dengan perintah `ip addr`.
 
-![](https://i.imgur.com/xD8vAkw.png)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-12-14-menghubungkan-wifi-pada-debian-cli/xD8vAkw_zmz00n.webp)
 
 Selesai, sepertinya begitu saja tulisan kali ini. Terima kasih

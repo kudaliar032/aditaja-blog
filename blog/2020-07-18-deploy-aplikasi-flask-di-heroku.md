@@ -6,7 +6,7 @@ tags:
 - flask
 ---
 
-![Deploy Aplikasi Flask di Heroku](https://i.imgur.com/MRv134Y.png)
+<img src="https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/MRv134Y_zoelt8.webp" width="100%" style={{marginBottom: "25px"}} />
 
 Hallo semuanya, saya ingin membagikan sedikit cara untuk mendeploy aplikasi python dengan framework flask di heroku, langsung saja seperti berikut
 
@@ -16,7 +16,7 @@ Hallo semuanya, saya ingin membagikan sedikit cara untuk mendeploy aplikasi pyth
 
 Buka dulu aplikasi yang mau di deploy, jika belum ada bisa pakai contoh aplikasi sederhana berikut ini [simple flask](https://github.com/kudaliar032/simple-flask/tree/master). Pada aplikasi tersebut terdapat beberapa file seperti berikut
 
-![](https://i.imgur.com/INgVNme.png)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-07-18-deploy-aplikasi-flask-di-heroku/INgVNme_ful4sd.webp)
 
 siapkan terlebih dahulu [virtualenv](https://pypi.org/project/virtualenv/) untuk menjalankan aplikasi, dapat menggunakan perintah berikut
 
@@ -36,11 +36,11 @@ kita coba jalankan dulu aplikasi tersebut untuk memastikan aplikasi dapat berjal
 
 maka akan tampil seperti berikut ini, yang menandakan bahwa aplikasi sudah berjalan dan dapat diakses pada url `http://127.0.0.1:5000`
 
-![](https://aditaja-bucket.s3-ap-southeast-1.amazonaws.com/blog-media/20200719-Screenshot-20200719220627-952x204.png)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-07-18-deploy-aplikasi-flask-di-heroku/20200719-Screenshot-20200719220627-952x204_cgm5nx.webp)
 
 tampilannya kurang lebih seperti berikut ini
 
-![](https://aditaja-bucket.s3-ap-southeast-1.amazonaws.com/blog-media/20200719-Screenshot-20200719221223-429x142.png)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-07-18-deploy-aplikasi-flask-di-heroku/20200719-Screenshot-20200719221223-429x142_epg4so.webp)
 
 jika tampil muncul seperti tersebut dapat dipastikan bahwa aplikasi telah berjalan dengan baik, untuk keluar dapat dengan menekan shortcut `Ctrl+C`.
 
@@ -60,7 +60,7 @@ Setelah berhasil diinstall, maka berikutnya adalah login ke Heroku CLI dengan pe
 
 kemudian tekan sembarang tombol untuk membuka browser, maka akan tampil seperti berikut
 
-![](https://aditaja-bucket.s3-ap-southeast-1.amazonaws.com/blog-media/20200719-Screenshot-20200719231419-1919x943.png)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-07-18-deploy-aplikasi-flask-di-heroku/20200719-Screenshot-20200719231419-1919x943_r4h2uj.webp)
 
 tekan `Log In` maka otomatis login pada Heroku CLI.
 
@@ -94,11 +94,11 @@ perintah `web` digunakan heroku untuk menjalankan web server dengan bantuan libr
 
 Buka terlebih dahulu dashboard heroku kita, dapat dengan mengakses link berikut ini [https://dashboard.heroku.com/apps](https://dashboard.heroku.com/apps "https://dashboard.heroku.com/apps"), setelah itu buat aplikasi baru pada menu berukut ini dihalaman utama dashboard. Pilih saja yang `Create new app`
 
-![](https://aditaja-bucket.s3-ap-southeast-1.amazonaws.com/blog-media/20200719-Screenshot-20200719223510-258x199.png)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-07-18-deploy-aplikasi-flask-di-heroku/20200719-Screenshot-20200719223510-258x199_frdbsp.webp)
 
 Masukan nama aplikasi dan juga pilih region dari aplikasi kita nantinya, untuk akun free hanya terdapat 2 region yaitu `Europe` dan `US`.
 
-![](https://aditaja-bucket.s3-ap-southeast-1.amazonaws.com/blog-media/20200719-Screenshot-20200719223822-813x524.png)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-07-18-deploy-aplikasi-flask-di-heroku/20200719-Screenshot-20200719223822-813x524_g1d7qt.webp)
 
 ### Deploy Aplikasi ke Heroku
 
@@ -121,16 +121,16 @@ setelah itu lakukan push ke repository remote milik heroku
 
 maka otomatis heroku akan melakukan build dan deployment pada server mereka, tunggu beberapa saat hingga aplikasi berhasil di deploy, kira-kira akan muncul pesan seperti berikut ini
 
-![](https://aditaja-bucket.s3-ap-southeast-1.amazonaws.com/blog-media/20200719-Screenshot-20200719225635-902x272.png)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-07-18-deploy-aplikasi-flask-di-heroku/20200719-Screenshot-20200719225635-902x272_lhtuty.webp)
 
 coba akses aplikasinya dengan url yang ditampilkan, misalkan [https://kl032-simple-flask.herokuapp.com/](https://kl032-simple-flask.herokuapp.com/ "https://kl032-simple-flask.herokuapp.com/"). Maka seharusnya akan tampila seperti saat kita menjalankannya dilocal sebelumnya.
 
-![](https://aditaja-bucket.s3-ap-southeast-1.amazonaws.com/blog-media/20200719-Screenshot-20200719225847-408x106.png)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-07-18-deploy-aplikasi-flask-di-heroku/20200719-Screenshot-20200719225847-408x106_jst1zy.webp)
 
 ## Kesimpulan
 
 Pada artikel ini ditampilkan langkah-langkah melakukan deployment aplikasi sederhana, dalam hal ini ialah aplikasi python dengan framework flask, pada Heroku. Untuk mendeploy aplikasi flask diperlukan library python yaitu `gunicorn`. Selain itu dalam melakukan deployment ke heroku diperlukan pengetahuan dasar dan perintah-perintah `git`.
 
-Heroku ialah salah satu contoh dari penerapan Platform-as-a-service (PaaS). Dengan menggunakan heroku kita dapat mendeploy aplikasi tanpa perlu kita melakukan konfigurasi disisi infrastruktur. Heroku sendiri menawarkan beberapa paket, diantaranya adalah paket Free dan Student Plan yang dapat kita gunakan untuk belajar dan deployment yang sederhana. 
+Heroku ialah salah satu contoh dari penerapan Platform-as-a-service (PaaS). Dengan menggunakan heroku kita dapat mendeploy aplikasi tanpa perlu kita melakukan konfigurasi disisi infrastruktur. Heroku sendiri menawarkan beberapa paket, diantaranya adalah paket Free dan Student Plan yang dapat kita gunakan untuk belajar dan deployment yang sederhana.
 
 Sekian dari saya, semoga catatan ini bermanfaat, apabila ada pertanyaan jangan segan melemparkan komentar. Terima kasih.

@@ -5,7 +5,7 @@ tags:
 - mail server
 ---
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1611402435/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/nh97GXa_cgn9i0.webp)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/nh97GXa_cgn9i0.webp)
 
 Hallo, karena kemaren saya baru saja coba-coba deploy/setup mail server pakai iRedMail jadi sekalian lah ditulis di blog biar gak lupa. Sebenernya sudah tau iRedMail sendiri sudah lumayan lama sih, tapi kemaren-kemaren cuma coba deploy saja terus kirim email sesama user udah gitu aja. Nah, mungkin kali ini saya coba tulis cara yang saya gunakan untuk deploy mail servernya sampai bisa kirim email ke provider email lain (tidak pasti).
 
@@ -101,45 +101,45 @@ bash iRedMail.sh
 
 - Pesan selamat datang, pilih `Yes` kalau mau melanjutkan
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1611402432/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/aJAL3mC_kkkn5u.webp)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/aJAL3mC_kkkn5u.webp)
 
 - Tentukan directory untuk penyimpanan email, default-nya berada di `/var/vmail`, Biarkan saja default, tapi kalau mau dipindah juga boleh
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1611402433/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/WPsAnHF_lbyel7.webp)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/WPsAnHF_lbyel7.webp)
 
 - Pilih web server yang akan digunakan, default-nya `nginx`. Disini saya pilih `nginx`
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1611402434/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/6zCHgtn_bmpltz.webp)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/6zCHgtn_bmpltz.webp)
 
 - Berikutnya pilih backend yang akan digunakan untuk menyimpan mail account, pilihlah yang familiar. Misalkan disini saya pakai `MariaDB`. Untuk memilih pakai `space`
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1611402434/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/4pnmQfn_kzjegp.webp)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/4pnmQfn_kzjegp.webp)
 
 - Masukan password untuk akun `root` databasenya. Buat seribet mungkin
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1611402433/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/gGCuPgU_s9jqeb.webp)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/gGCuPgU_s9jqeb.webp)
 
 - Masukan domain untuk emailnya, misalkan `example.my.id`. Nantinya akan menjadi alamat emailnya, buat berbeda dengan hostname-nya.
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1611402437/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/pN4HXMj_wninz2.webp)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/pN4HXMj_wninz2.webp)
 
 - Masukan password untuk postmaster/admin. Buat password serumit mungkin
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1611402435/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/jBLJhrt_vvlasc.webp)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/jBLJhrt_vvlasc.webp)
 
 - Pilih komponen-komponen lain yang hendak diinstal, misalkan `Roundcubemail` untuk Webmail, `SOGo` untuk Webmail, Kalender, Address Book, dll.
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1611404008/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/1QpSgWb_erc5vt.webp)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/1QpSgWb_erc5vt.webp)
 
 - Konfirmasi dengan memasukan `y`
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1611402437/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/swoMdqX_pjgsln.webp)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/swoMdqX_pjgsln.webp)
 
 - Konfirmasi `Y` saja jika ada permintaan untuk konfirmasi
 
 - Jika sudah selesai akan muncul pesan seperti berikut ini. Kira-kira
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1611402436/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/yzthTMm_kfmqky.webp)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/yzthTMm_kfmqky.webp)
 
 - Sampai sini instalasi telah selesai mail server sudah siap digunakan tinggal lakukan reboot server, kemudian tuning-tuning agar bisa berkirim email dengan provider lain seperti GMail, Outlook, Zoho, dll
 
@@ -149,7 +149,7 @@ Setelah, proses instalasi selesai akan mengenerate file `/root/iRedMail-x.y.z/iR
 
 - Saat salah satu tautan yang ditampilkan dan masukan user postmaster@example.my.id dengan password yang dimasukan pada saat instalasi
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1611402436/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/FQuLKoJ_iufh6y.webp)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/FQuLKoJ_iufh6y.webp)
 
 ## Setelah Instalasi
 
@@ -191,7 +191,7 @@ example.my.id.  3600  IN  TXT "v=spf1 ip4:111.111.111.111 -all"
 
 pada CentOS jalankan perintah berikut `amavisd showkeys`. Jika muncul pesan error `Config file "/etc/amavisd.conf" does not exist ...` gunakan perintah berikut ini `amavisd -c /etc/amavisd/amavisd.conf showkeys`. Kira-kira akan muncul seperti berikut ini
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1611402434/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/qDuVbFl_qbkkuo.webp)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/qDuVbFl_qbkkuo.webp)
 
 copy output tersebut dengan mengabaikan tanda `"` dan `enter` sehingga kira-kira menjadi seperti berikut ini
 
@@ -201,7 +201,7 @@ v=DKIM1; p=MIIBIjANBgkqhkiG9...
 
 masukan record tersebut sebagai `TXT` record di domain management. Untuk domain `dkim._domainkey.example.my.id`. Untuk memverifikasi silahkan lakukan query dengan perintah `dig -t TXT dkim._domainkey.example.my.id` atau `nslookup -type=TXT dkim._domainkey.example.my.id` dan pastikan key yang digenerate tadi sudah masuk sebagai record. Atau gunakan tools yang sudah disediakan oleh `amavisd` dengan mengeksekusi perintah `amavisd -c /etc/amavisd/amavisd.conf testkeys` dan pastikan dapat output `PASS`
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1611402433/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/3Tf6Uri_ndahli.webp)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/3Tf6Uri_ndahli.webp)
 
 #### `DMARC` record
 
@@ -213,13 +213,13 @@ v=DMARC1; p=none
 
 Itulah beberapa record yang saya lengkapi agar email yang dikirimkan oleh mail server kita dapat diterima oleh provider lain. Untuk mengetahui apakah email yang dirimkan sudah ok bisa menggunakan bantuan tools dari https://www.mail-tester.com. Disini saya berhasil dapat score `9.4`.
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1611404036/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/BqQDyBN_phyykw.webp)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/BqQDyBN_phyykw.webp)
 
 ### Setup SSL
 
 Setelah record-record domain dilengkapi. Berikutnya adalah mengganti sertifikat SSL yang digenerate otomatis saat melakukan instasi agar Webmail milik kita jika diakses tidak muncul peringatan yang menyebalkan. Selain itu saat kita login ke Mail Client nantinya tidak muncul pesan-pesan menyebalkan itu juga. Seperti ini
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1611402432/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/Yy0Rxjy_etdymc.webp)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/Yy0Rxjy_etdymc.webp)
 
 Disini saya pakai SSL gratisan dari Let's Encrypt jika anda punya sertifikat yang didapatkan dari penyedia sertifikat bisa gunakan sertifikat tersebut, untuk caranya di [sini](https://docs.iredmail.org/use.a.bought.ssl.certificate.html). Jika pakai LE caranya sebagai berikut.
 
@@ -264,9 +264,9 @@ systemctl restart nginx
 
 - Coba akses, pastikan sertifikat-nya valid, bisa juga cek dengan tools dari https://www.ssllabs.com/ssltest/analyze.html
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1611402435/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/lOQWZ8U_u4ksst.webp)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/lOQWZ8U_u4ksst.webp)
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1611402434/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/eoL41R1_ypvf1d.webp)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/eoL41R1_ypvf1d.webp)
 
 ## Email Client
 
@@ -276,11 +276,11 @@ Selanjutnya adalah beberapa cara yang dapat digunakan untuk berkirim dan menerim
 
 Untuk menggunakan webmail, cukup mudah kita hanya perlu mengakses domain dari mail server menggunakan browser, misalkan domainya `mail.example.my.id` maka untuk mengakses webmail dapat menggunakan tautan `https://mail.example.my.id/mail`. Akan keluar form login
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1611404059/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/B9DcNAv_d4op2b.webp)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/B9DcNAv_d4op2b.webp)
 
 masukan kredensial dan klik `Login`
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1611402435/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/ZQY3h1Z_kh4h6o.webp)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/ZQY3h1Z_kh4h6o.webp)
 
 untuk penggunaanya bisa di googling saja, mirip-mirip lah sama kalau kita pakai Gmail.
 
@@ -291,16 +291,16 @@ Kita juga dapat menggunakan mail server kita dari Thunderbird, untuk konfigurasi
 - Buka aplikasi thunderbird
 - Cari menu `New` > `Existing Mail Account...`
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1611403983/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/zIbPV3n_u9sp3p.webp)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/zIbPV3n_u9sp3p.webp)
 
 - Isi form yang diminta, seperti Nama, Email Address, dan Password. Kemudian klik `Configure manually...`
 - Isi kira-kira seperti berikut, nanti tinggal sesuaikan dengan hostname saat menginstall mail server dan alamat email yang digunakan. Kemudian klik `Re-test`
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1611402437/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/bXftAc7_oulv4l.webp)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/bXftAc7_oulv4l.webp)
 
 - Setelah klik `Done`, maka akan masuk kedalam akun email anda. Silahkan dijelajahi lebih lanjut.
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1611402437/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/J9VLNYl_e8yvqk.webp)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/J9VLNYl_e8yvqk.webp)
 
 **Selesai**, mungkin sampai sini saja catatan saya kali ini, apabila ada yang tersesat kedalam tulisan ini dan membaca hingga kalimat ini. Terima kasih anda luar biasa. :grin:
 

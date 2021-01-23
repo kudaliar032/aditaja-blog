@@ -7,7 +7,7 @@ tags:
 - devops
 ---
 
-![GitLab ChatOps](https://i.imgur.com/6M1LQzG.png)
+![GitLab ChatOps](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/6M1LQzG_joykbs.webp)
 
 Hallo, saya ingin membagikan sesuatu yang baru saja saya coba pelajari yaitu GitLab ChatOps. Sebelumnya ChatOps itu apa sih? Menurut dari beberapa artikel di internet yang saya baca. Yang kemudian coba saya simpulkan, ChatOps merupakan.
 
@@ -69,7 +69,7 @@ Disini akan dicontohkan penerapan GitLab ChatOps menggunakan layanan obrolan Sla
 
 Saat ini pada kodingan saya belum terdapat file `.gitlab-ci.yml` sehingga kita perlu menambahkannya, bagaimana membuat konfigurasi GitLab CI/CD secara mendetail tidak akan dibahas di postingan ini, disini kita akan berfokus pada integrasi ChatOps nya saja. Saat ini kondisi kodingan milik saya seperti berikut
 
-![](https://lh4.googleusercontent.com/BIkSHoNiPOU9hOVkN-DgI7sPAPdGUu-GembAEOejUPgg5FfWb5oQcQV8lAOqdAn1gGhkeyi8wm7FXv5dare_WVIFaAucKv7LyKyBleM0FxcugzS8dHJNBsnvXakq_0m8vi1EqadM)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-09-18-gitlab-chatops/BIkSHoNiPOU9hOVkN-DgI7sPAPdGUu-GembAEOejUPgg5FfWb5oQcQV8lAOqdAn1gGhkeyi8wm7FXv5dare_WVIFaAucKv7LyKyBleM0FxcugzS8dHJNBsnvXakq_0m8vi1EqadM_siuoh5.webp)
 
 sehingga kita perlu menambahkan sebuah file `.gitlab-ci.yml` yang berisikan konfigurasi untuk menjalankan GitLab CI/CD seperti berikut ini
 
@@ -111,27 +111,27 @@ Agar kita dapat mengirimkan perintah dari Slack menuju repository GitLab maka ki
 
 Pada project yang ingin dihubungkan, pilih `Settings` > `Integrations` > `Slack application`
 
-![](https://lh3.googleusercontent.com/47NtSrnw67UkcxB5BYx5XIY85fw8Q2SyLuaVwHCPist-4h3aCq1GdBatlLGfczFYi0u24VRBLHDvK-FqagDoLsbeMl5FELgDDFpdxLPJnlyr09Q6r1ZBE9hV8HDQ9QbuSHzAtWLg)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-09-18-gitlab-chatops/47NtSrnw67UkcxB5BYx5XIY85fw8Q2SyLuaVwHCPist-4h3aCq1GdBatlLGfczFYi0u24VRBLHDvK-FqagDoLsbeMl5FELgDDFpdxLPJnlyr09Q6r1ZBE9hV8HDQ9QbuSHzAtWLg_xkmz2m.webp)
 
 akan tampil seperti gambar berikutnya, maka pilihlah `Add to Slack`
 
-![](https://lh6.googleusercontent.com/6QplBBs_omr0IVm16uAlhMzcyVC3h1WVPow4QA06gHW-NRYIj8NiTfrOEtPd7mr7uQmlhT0JtajclUXMNcOIxPuxJKqlIubXiaWOsrYTsgeJNcsUHyT--lr3u2jcbRu71Uslil3D)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-09-18-gitlab-chatops/6QplBBs_omr0IVm16uAlhMzcyVC3h1WVPow4QA06gHW-NRYIj8NiTfrOEtPd7mr7uQmlhT0JtajclUXMNcOIxPuxJKqlIubXiaWOsrYTsgeJNcsUHyT--lr3u2jcbRu71Uslil3D_pq4hbn.webp)
 
 allow permintaan permission dari GitLab untuk mengakses workspace slack yang akan digunakan.
 
-![](https://lh3.googleusercontent.com/PkQpsNmIpU6PdpatAKCrDqK4r1yhb68-uCNh_AY2jgHevZHNCX2LuhgCoBXuH7n7S3qR72CMz4C05cWRK1TLHDGcbCoqpiVXuVvc5s5NdukED68Rwo4o9hK80nVFuqIWRlCcJNYK)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-09-18-gitlab-chatops/PkQpsNmIpU6PdpatAKCrDqK4r1yhb68-uCNh_AY2jgHevZHNCX2LuhgCoBXuH7n7S3qR72CMz4C05cWRK1TLHDGcbCoqpiVXuVvc5s5NdukED68Rwo4o9hK80nVFuqIWRlCcJNYK_hgrdk3.webp)
 
 apabila sudah menampilkan seperti gambar berikut ini, berarti slack dan gitlab telah berhasil dihubungkan, kita dalam memodifikasi `Project alias` untuk memperpendek perintah nantinya, apabila Project aliasnya seperti dibawah ini, maka nantinya kita menggunakan perintah `/gitlab kudaliar032/flutter-get-started run <job name> <job argument>`
 
-![](https://lh5.googleusercontent.com/3KBI7DCohIvVYIcMN96LllLUAkuEUtHB1TSil2jtgyxElu_JVIQ5Pl9bRdD16mYrylGAAhjn9nxzzFzzJJIBrJjkiuvaLRX8Zntr94Kif77e7BiMRHcyOVKt3bfMP_zU_FyhJrKJ)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-09-18-gitlab-chatops/3KBI7DCohIvVYIcMN96LllLUAkuEUtHB1TSil2jtgyxElu_JVIQ5Pl9bRdD16mYrylGAAhjn9nxzzFzzJJIBrJjkiuvaLRX8Zntr94Kif77e7BiMRHcyOVKt3bfMP_zU_FyhJrKJ_lwul5h.webp)
 
 kemudian coba buka atau buat channel baru di Workspace Slack
 
-![](https://lh6.googleusercontent.com/4KeSqMKHrMa53Ss3qcU-0xE3Wg3Be8BOvzNGk1UH1M9JVnWrNqaVqvpdn7s7uBcMEJLRFZ4cP5VZ9s8IlWEvB9hR7PlptnC6f6l9oXwGtbRiPYD7sEhsJmCAQ6q7sTKupy2BmbGF)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-09-18-gitlab-chatops/4KeSqMKHrMa53Ss3qcU-0xE3Wg3Be8BOvzNGk1UH1M9JVnWrNqaVqvpdn7s7uBcMEJLRFZ4cP5VZ9s8IlWEvB9hR7PlptnC6f6l9oXwGtbRiPYD7sEhsJmCAQ6q7sTKupy2BmbGF_zvi7hb.webp)
 
 coba untuk berinteraksi dengan GitLab dengan mengirimkan pesan `/gitlab kudaliar032/flutter-get-started help`, maka GitLab akan membalasnya seperti berikut ini
 
-![](https://lh3.googleusercontent.com/Qxx5cZd_7XdGEPQLucPYTzqnHTQGES3JZR3ftEJgSYienWwOIBJfuAqrrGV5NIGZcpLkIVT1VYZ81DEFlsAaUEZ0gmDKZJXC9t0jResuq1YUqyGiy7Ym2sGHv6x0HmhrXWK173v9)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-09-18-gitlab-chatops/Qxx5cZd_7XdGEPQLucPYTzqnHTQGES3JZR3ftEJgSYienWwOIBJfuAqrrGV5NIGZcpLkIVT1VYZ81DEFlsAaUEZ0gmDKZJXC9t0jResuq1YUqyGiy7Ym2sGHv6x0HmhrXWK173v9_s7ushk.webp)
 
 hal tersebut menandakan bahwa GitLab ChatOps siap untuk digunakan.
 
@@ -139,7 +139,7 @@ hal tersebut menandakan bahwa GitLab ChatOps siap untuk digunakan.
 
 Untuk penggunaannya sendiri sangat mudah, kita tinggal mengirimkan perintah ChatOps yang telah kita atur, dengan format `/gitlab <Project alias> run <job name> <job atribut>`, misalnya kita ingin menjalankan job yang telah kita buat sebelumnya, seperti berikut
 
-![](https://lh3.googleusercontent.com/2GRqhl59wZppTZcAjB89W5EdTLDgBZ4OYYBIN8eXFcJGZZNW9pu_RuCsobZ3HObOeVhpQ6dZ2fxPwQpiWCv7WoyvoQxICv0ZrugdSWMOGlo_fT2UlclSu6QxIyk3fSxZhNxnOO6U)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-09-18-gitlab-chatops/2GRqhl59wZppTZcAjB89W5EdTLDgBZ4OYYBIN8eXFcJGZZNW9pu_RuCsobZ3HObOeVhpQ6dZ2fxPwQpiWCv7WoyvoQxICv0ZrugdSWMOGlo_fT2UlclSu6QxIyk3fSxZhNxnOO6U_m2yh1w.webp)
 
 Jika job telah selesai, maka GitLab akan mengirimkan pesan sesuai dengan yang telah kita tentukan sebelumnya. Tinggal modifikasi sesuai selera.
 

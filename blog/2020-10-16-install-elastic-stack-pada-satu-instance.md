@@ -7,7 +7,7 @@ tags:
 - log
 ---
 
-![Menginstal Elastic Stack](https://i.imgur.com/UToebnD.png?1)
+![Menginstal Elastic Stack](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/UToebnD_qmowmb.webp)
 
 Hallo, kali ini saya ingin membagikan cara untuk menginstal elastic stack pada sistem operasi linux, nantinya saya akan menggunakan sistem operasi [Ubuntu 18.04](https://releases.ubuntu.com/18.04/). Disini saya tidak akan menjelaskan secara mendetail apa itu elastic stack, saya hanya akan menuliskan langkah-langkah yang dilakukan untuk melakukan instalasi elastic stack. Untuk penjelasan elastic stack sendiri dapat dilihat di situs [elastic.co](https://www.elastic.co/elastic-stack).
 
@@ -19,25 +19,25 @@ Sesuai dengan namanya, elastic stack terdiri dari beberapa bagian. Diantaranya y
 
 ### Elasticsearch
 
-![Elasticsearch](https://i.imgur.com/9wpKadu.png)
+![Elasticsearch](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-10-16-install-elastic-stack-pada-satu-instance/9wpKadu_tfgltz.webp)
 
 Bertugas untuk mengumpulkan data, mencari data, dan menganalisis data yang akan diolah.
 
 ### Kibana
 
-![Kibana](https://i.imgur.com/ltfzAat.png)
+![Kibana](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-10-16-install-elastic-stack-pada-satu-instance/ltfzAat_xnuk3l.webp)
 
 Bertugas untuk mengeksplorasi data dan menyajikannya dalam bentuk visual agar lebih mudah dibaca dan dipahami.
 
 ### Beats
 
-![Beats](https://i.imgur.com/Ck3dV7z.jpg)
+![Beats](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-10-16-install-elastic-stack-pada-satu-instance/Ck3dV7z_n8udcn.webp)
 
 Bertugas untuk mengambil data dari mesin yang akan dimonitoring dan mengirimkannya ke elasticsearch atau logstash untuk diolah.
 
 ### Logstash
 
-![Logstash](https://i.imgur.com/MWpjyP9.png)
+![Logstash](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-10-16-install-elastic-stack-pada-satu-instance/MWpjyP9_ckijtu.webp)
 
 Bertugas untuk menerima data yang dikirimkan oleh beats ataupun sumber lain untuk kemudian dilakukan pengolahan data agar lebih mudah untuk digunakan oleh Elastic Stack.
 
@@ -178,7 +178,7 @@ tcp   LISTEN  0       128                   0.0.0.0:5601          0.0.0.0:*     
 
 Kemudian, coba akses dengan menggunakan browser kealamat dari server kita, dengan port `5601`. Dan pastikan muncul seperti berikut ini
 
-![Kibana get started](https://i.imgur.com/xJoIq6G.png)
+![Kibana get started](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-10-16-install-elastic-stack-pada-satu-instance/xJoIq6G_l0zwji.webp)
 
 Sampai sini sebenarnya kita sudah bisa coba eksplore data menggunakan Kibana dan Elaticsearch dengan sample data yang disediakan oleh kibana. Tapi tidak dong, kita akan mencoba menginstal beats yang berguna untuk mengambil data logs dari server dan mengirimkannya ke elasticsearch. Agar kita dapat merasakan sensasi monitoring lognya elastic stack.
 
@@ -230,13 +230,13 @@ Loaded Ingest pipelines
 
 Untuk menampilkan log system yang dibaca oleh elastic stack dapat dilihat pada menu `Kibana` > `Discover`.
 
-![Discover](https://i.imgur.com/9xlhMew.png)
+![Discover](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-10-16-install-elastic-stack-pada-satu-instance/9xlhMew_fc0y9a.webp)
 
 Nah, filebeat juga sudah menyiapkan dashboard buat kita gunakan. Bisa dilihat pada menu `Kibana` > `Dashboard`. Setelah itu cari dashboard yang ingin kita lihat, karena disini kita baru mengaktifkan module system, kita bisa menampilkan SSH login untuk intance kita, dengan dashboard yang bernama `[Filebeat System] SSH login attempts ECS`. Kira-kira tampilannya seperti berikut ini.
 
-![SSH login attempts ECS - 1](https://i.imgur.com/NzMS10h.png)
+![SSH login attempts ECS - 1](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-10-16-install-elastic-stack-pada-satu-instance/NzMS10h_rt55kg.webp)
 
-![SSH login attempts ECS - 2](https://i.imgur.com/iKqEd2M.png)
+![SSH login attempts ECS - 2](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2020-10-16-install-elastic-stack-pada-satu-instance/iKqEd2M_vlsaod.webp)
 
 Pada dashboard tersebut kita bisa melihat beberapa informasi, seperti jumlah usaha login SSH yang dilakukan dalam rentang waktu tertentu, lokasi asal koneksi dilakukan, username yang paling sering digunakan untuk login gagal, dll.
 

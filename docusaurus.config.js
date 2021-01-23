@@ -1,9 +1,8 @@
 module.exports = {
-  title: 'aditaja.my.id',
-  tagline: 'aditaja.my.id',
-  url: 'https://aditaja.my.id',
+  title: 'blog aditaja',
+  tagline: 'hanya sebuah blog',
+  url: 'https://blog.aditaja.my.id',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
   organizationName: 'kudaliar032',
   projectName: 'aditaja-blog',
@@ -14,9 +13,9 @@ module.exports = {
       indexName: 'aditaja-blog',
     },
     navbar: {
-      title: 'aditaja.my.id',
+      title: 'blog aditaja',
       logo: {
-        alt: 'aditaja.my.id',
+        alt: 'blog aditaja',
         src: 'img/logo.svg',
       },
       items: [
@@ -28,7 +27,7 @@ module.exports = {
       ]
     },
     footer: {
-      copyright: `Copyright © ${new Date().getFullYear()} <a href="https://aditaja.my.id">aditaja.my.id</a> &bull; Built with <a href="https://v2.docusaurus.io">🦖</a>.`
+      copyright: `Copyright © ${new Date().getFullYear()} &nbsp;&nbsp;&bull;&nbsp;&nbsp; <a href="https://blog.aditaja.my.id">blog.aditaja.my.id</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp; Built with <a href="https://v2.docusaurus.io">🦖</a>.`
     },
   },
   presets: [
@@ -36,10 +35,14 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         blog: {
-          showReadingTime: true,
+          blogTitle: 'blog aditaja',
+          blogDescription: 'hanya sebuah blog',
           blogSidebarTitle: 'Recent Posts',
+          showReadingTime: true,
+          routeBasePath: '/',
           feedOptions: {
-            type: 'all'
+            type: 'all',
+            copyright: `Copyright © ${new Date().getFullYear()} blog.aditaja.my.id`
           }
         }
       }

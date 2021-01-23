@@ -6,7 +6,7 @@ tags:
 - networking
 ---
 
-<img src="https://res.cloudinary.com/kudaliar032/image/upload/v1608092839/aditaja-blog/2017-08-09-menambahkan-router-mikrotik-di-gns3/3_emjbzf.jpg" width="100%" style={{marginBottom: "25px"}}/>
+<img src="https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/3_emjbzf.webp" width="100%" style={{marginBottom: "25px"}}/>
 
 Selamat malam menjelang pagi semuanya. Setelah sekian lama vakum dari dunia networking saya ingin kembali mengenang masa-masa itu dan ingin membagikan sedikit ilmu kepada pembaca blog ini sekalian. Kita mulai dari ilmu yang ringan-ringan dulu ya bree, soalnya udah pada lupa _#ketawa_. Oke yang akan saya bagikan kali ini adalah bagimana cara menambahkan RouterOS di GNS3.
 
@@ -26,33 +26,33 @@ Oke, saya rasa cuman 3 hal diatas yang perlu di persiapkan bree. Pertama-tama ma
 
 Buka software GNS3nya, maka akan tampil seperti berikut ini. Perlu diketahui saya pakai versi 2.0.3.
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1608092973/aditaja-blog/2017-08-09-menambahkan-router-mikrotik-di-gns3/langkah1_vbwzkc.png)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2017-08-09-menambahkan-router-mikrotik-di-gns3/langkah1_vbwzkc.webp)
 
 Pilih ok aja deh dulu, kemudian pilih `Edit` > `Prefences` maka akan tampil jendela apalah itu namanya, pilih yang Qemu VMs dan akan tampil seperti berikut
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1608092972/aditaja-blog/2017-08-09-menambahkan-router-mikrotik-di-gns3/langkah2_llxzfz.png)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2017-08-09-menambahkan-router-mikrotik-di-gns3/langkah2_llxzfz.webp)
 
 Klik `New`, jika ada pesan peringatan ok aja. Kemudian masukan nama untuk perangkatnya nanti, sesuka hati aja. Dan `Next`
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1608092972/aditaja-blog/2017-08-09-menambahkan-router-mikrotik-di-gns3/langkah3_uloldn.png)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2017-08-09-menambahkan-router-mikrotik-di-gns3/langkah3_uloldn.webp)
 
 Ubah RAM sesuka hati disini saja pakai 64MB aja dan `Qemu Binary` seperti punya berikut ini, Next
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1608092972/aditaja-blog/2017-08-09-menambahkan-router-mikrotik-di-gns3/langkah4_e6nfli.png)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2017-08-09-menambahkan-router-mikrotik-di-gns3/langkah4_e6nfli.webp)
 
 Biarkan saja tetap telnet dan klik `Next` lagi. Nah pada bagian ini pilih `New Image` kemudian `Browse…` dan cari file CHR dari RouterOS yang sudah didownload sebelumnya. Pilih open maka akan tampil peringatan yang mengatakan `apakah anda ingin mengcopy file CHRnya ke default image derektori?` pilih oke aja, dan tunggu beberapa saat. Jika sudah selesai tekan `Finish`, tara mikrotiknya sudah berhasil ditambahkan. tinggal atur inteface dan lain sebagainya
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1608092972/aditaja-blog/2017-08-09-menambahkan-router-mikrotik-di-gns3/langkah5_cacc9c.png)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2017-08-09-menambahkan-router-mikrotik-di-gns3/langkah5_cacc9c.webp)
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1608092972/aditaja-blog/2017-08-09-menambahkan-router-mikrotik-di-gns3/langkah5.1_snyywm.png)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2017-08-09-menambahkan-router-mikrotik-di-gns3/langkah5.1_snyywm.webp)
 
 Pilih yang ditambahkan tadi, kemudian klik `Edit` maka akan tampil seperti ini
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1608092973/aditaja-blog/2017-08-09-menambahkan-router-mikrotik-di-gns3/langkah6_rouv1k.png)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2017-08-09-menambahkan-router-mikrotik-di-gns3/langkah6_rouv1k.webp)
 
 Penjelasan untuk masing-masingnya gini. Template name, itu untuk menentukan nama perangkatnya. Default name format, itu menentukan nama perangkat yang akan tampil saat ditambahkan di lembar kerja. Symbol, itu nanti icon yang tampil di lembar kerja bagian itu bisa kita tambahkan sendiri. Category, itu cuman untuk menkategorikan perangkat aja. RAM, untuk menentukan jumlah RAM per-perangkat. Dan lain-lain deh, silahkan di ubah sesuai hati dan dicoba-coba sendiri. Untuk menambahkan/mengatur Interfacenya kita harus pergi ke menu `Network` dan akan tampil seperti berikut
 
-![](https://res.cloudinary.com/kudaliar032/image/upload/v1608092973/aditaja-blog/2017-08-09-menambahkan-router-mikrotik-di-gns3/langkah7_uvqq6d.png)
+![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2017-08-09-menambahkan-router-mikrotik-di-gns3/langkah7_uvqq6d.webp)
 
 Kalau mau menambah jumlah interface di mikrotiknya ubah pada bagian `Adapters` ubah angkanya seuai keinginan. Kalau mau mengubah type interfacenya silahkan diubah pada bagian `Type` jika sudah di ok’in aja. Saya rasa itu saya yang perlu disetting Mikrotiknya udah bisa berjalan seperti yang asli kok. Untuk menyimpannya klik `OK` aje terus yak. Tinggal digunakan aja deh.
 
