@@ -12,6 +12,12 @@ module.exports = {
       appId: 'KFE723IYI9',
       indexName: 'aditaja-blog',
     },
+    googleAnalytics: {
+      trackingID: 'UA-191884703-1'
+    },
+    gtag: {
+      trackingID: 'G-EBWZKDBEHC'
+    },
     navbar: {
       title: 'blog aditaja',
       logo: {
@@ -34,6 +40,7 @@ module.exports = {
     [
       '@docusaurus/preset-classic',
       {
+        docs: false,
         blog: {
           blogTitle: 'blog aditaja',
           blogDescription: 'hanya sebuah blog',
@@ -47,5 +54,6 @@ module.exports = {
         }
       }
     ]
-  ]
+  ],
+  plugins: ['@docusaurus/plugin-google-analytics', '@docusaurus/plugin-google-gtag']
 }

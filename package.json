@@ -1,6 +1,7 @@
 {
   "name": "aditaja",
   "version": "1.0.0",
+  "license": "CC-BY-4.0",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start --host 0.0.0.0",
@@ -10,8 +11,10 @@
     "serve": "docusaurus serve"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-alpha.70",
-    "@docusaurus/preset-classic": "2.0.0-alpha.70",
+    "@docusaurus/core": "2.0.0-alpha.71",
+    "@docusaurus/plugin-google-analytics": "^2.0.0-alpha.71",
+    "@docusaurus/plugin-google-gtag": "^2.0.0-alpha.71",
+    "@docusaurus/preset-classic": "2.0.0-alpha.71",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
