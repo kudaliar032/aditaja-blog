@@ -2271,14 +2271,14 @@
     "@docusaurus/utils" "2.0.0-alpha.71"
     react-json-view "^1.21.1"
 
-"@docusaurus/plugin-google-analytics@2.0.0-alpha.71", "@docusaurus/plugin-google-analytics@^2.0.0-alpha.71":
+"@docusaurus/plugin-google-analytics@2.0.0-alpha.71":
   version "2.0.0-alpha.71"
   resolved "https://registry.yarnpkg.com/@docusaurus/plugin-google-analytics/-/plugin-google-analytics-2.0.0-alpha.71.tgz#a5be0341c563c95140fe610e15750685a856abfa"
   integrity sha512-rMU6VYQPeJjt2Xa47WEQq69cdXVaKzV3IOeBsAJyLPcsZ1yEABMgBXsus2UYGszyp7b96BYm02jHl+skaqaPNA==
   dependencies:
     "@docusaurus/core" "2.0.0-alpha.71"
 
-"@docusaurus/plugin-google-gtag@2.0.0-alpha.71", "@docusaurus/plugin-google-gtag@^2.0.0-alpha.71":
+"@docusaurus/plugin-google-gtag@2.0.0-alpha.71":
   version "2.0.0-alpha.71"
   resolved "https://registry.yarnpkg.com/@docusaurus/plugin-google-gtag/-/plugin-google-gtag-2.0.0-alpha.71.tgz#97a3e7971e771fe3e3d810419f27da955a10527b"
   integrity sha512-cXUWKqHxYN84is56VxLzX7Ik32iKP2D19E9Rrbl+JigpN7/+m4hZwx3h5X11xHF3QMWv0Ok/dw0yIruBrhr3YA==
