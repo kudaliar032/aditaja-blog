@@ -1,5 +1,5 @@
 theme = "harbor"
-baseurl = "https://blog.aditaja.my.id"
+baseurl = "https://blog.aditaja.my.id/"
 title = "blog aditaja"
 paginate = 5
 languageCode = "id"
