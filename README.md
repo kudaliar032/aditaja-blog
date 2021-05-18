@@ -1,2 +1,1 @@
-# adit's blog
-
+# Hello world!

@@ -1,0 +1,88 @@
+theme = "harbor"
+baseurl = "https://blog.aditaja.my.id"
+title = "blog aditaja"
+paginate = 5
+languageCode = "id"
+DefaultContentLanguage = "id"
+footnoteReturnLinkContents = "^"
+enableInlineShortcodes = true
+enableEmoji = true
+enableGoogleAnalytics = true
+
+# Optional
+# If you use googleAnalytics, you set top-level options in config.toml to the beginning of the config file like other top-level options.
+googleAnalytics = "UA-191884703-1"
+# and disqus too.
+disqusShortName = "aditaja-my-id"
+
+[permalinks]
+  post="/posts/:filename/"
+  page="/:filename/"
+
+[params.goatcounter]
+  domain="aditaja-blog.goatcounter.com"
+
+[Author]
+  name = "Aditya Rahman"
+
+[outputs]
+  section = ["JSON", "HTML"]
+
+[[params.nav]]
+  identifier = "about"
+  name = "About"
+  icon = "fas fa-user fa-lg"
+  url = "/about/"
+  weight = 3
+
+[[params.nav]]
+  identifier = "tags"
+  name = "Tags"
+  icon = "fas fa-tag fa-lg"
+  url = "tags"
+  weight = 3
+
+[[params.nav]]
+  identifier = "search"
+  name = "Search"
+  icon = "fas fa-search fa-lg"
+  url = "search"
+  weight = 3
+
+# copy paste this block and change for each social media to add how many ever social media
+# acounts/links you want
+[[params.social]]
+  name = "Facebook"
+  url = "https://facebook.com/kudaliar032"
+  icon = "fab fa-facebook"
+
+[[params.social]]
+  name = "Twitter"
+  url = "https://twitter.com/kudaliar032"
+  icon = "fab fa-twitter"
+
+[[params.social]]
+  name = "Instagram"
+  url = "https://instagram.com/kudaliar032"
+  icon = "fab fa-instagram"
+
+[[params.social]]
+  name = "GitHub"
+  url = "https://github.com/kudaliar032"
+  icon = "fab fa-github"
+
+[[params.social]]
+  name = "GitLab"
+  url = "https://gitlab.com/kudaliar032"
+  icon = "fab fa-gitlab"
+
+[[params.social]]
+  name = "LinkedIn"
+  url = "https://linkedin.com/in/adityarahman032"
+  icon = "fab fa-linkedin"
+
+[params.logo]
+  url = "logo.svg" # static/images/icon.png
+  width = 35
+  height = 35
+  alt = "Logo"
