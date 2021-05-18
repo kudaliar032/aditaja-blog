@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: kudaliar032/aditaja-blog
   branch: main
 media_library:
   name: cloudinary
@@ -10,5 +11,12 @@ collections:
 - label: Posts
   name: posts
   folder: content/post
+  identifier_field: title
   fields:
-  - {label: "Name", name: "name", widget: "string"}
+  - {label: "Title", name: "title", widget: "string"}
+  - {label: "Date", name: "date", widget: "date", format: "YYYY-MM-DD"}
+  - {label: "Tags", name: "tags", widget: "list", default: ["general"]}
+  - {label: "Draft", name: "draft", widget: "boolean", default: true}
+  - {label: "TOC", name: "toc", widget: "boolean", default: false}
+  - {label: "Back to TOP", name: "backtotop", widget: "boolean", default: true}
+  - {label: "Body", name: "body", widget: "markdown"}
