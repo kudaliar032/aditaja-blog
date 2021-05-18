@@ -2,8 +2,8 @@ theme = "harbor"
 baseurl = "https://blog.aditaja.my.id/"
 title = "blog aditaja"
 paginate = 5
-languageCode = "id"
-DefaultContentLanguage = "id"
+languageCode = "en"
+DefaultContentLanguage = "en"
 footnoteReturnLinkContents = "^"
 enableInlineShortcodes = true
 enableEmoji = true
@@ -18,9 +18,6 @@ disqusShortName = "aditaja-my-id"
 [permalinks]
   post="/posts/:filename/"
   page="/:filename/"
-
-[params.goatcounter]
-  domain="aditaja-blog.goatcounter.com"
 
 [Author]
   name = "Aditya Rahman"
@@ -81,8 +78,12 @@ disqusShortName = "aditaja-my-id"
   url = "https://linkedin.com/in/adityarahman032"
   icon = "fab fa-linkedin"
 
-[params.logo]
-  url = "logo.svg" # static/images/icon.png
-  width = 35
-  height = 35
-  alt = "Logo"
+[params]
+  mainSections = ["post"]
+  favicon = "favicon.ico"
+
+  [params.logo]
+    url = "logo.svg" # static/images/icon.png
+    width = 35
+    height = 35
+    alt = "blog aditaja"

@@ -1,5 +1,5 @@
 ---
-title: "Search"
+title: "Pencarian"
 disable_comments: true
 ---
 
