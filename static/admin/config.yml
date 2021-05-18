@@ -1,3 +1,14 @@
 backend:
   name: git-gateway
   branch: main
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: kudaliar032
+    api_key: 559263924759458
+collections:
+- label: Posts
+  name: posts
+  folder: content/post
+  fields:
+  - {label: "Name", name: "name", widget: "string"}
