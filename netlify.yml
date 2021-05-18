@@ -1,0 +1,5 @@
+build:
+  command: hugo
+  publish: public
+  environment:
+    HUGO_VERSION: 0.83.1
