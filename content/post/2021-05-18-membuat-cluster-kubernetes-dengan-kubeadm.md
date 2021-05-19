@@ -7,9 +7,9 @@ tags:
 draft: false
 toc: false
 backtotop: true
+images:
+- https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-05-18-membuat-cluster-kubernetes-dengan-kubeadm/cover.jpg
 ---
-
-![](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-05-18-membuat-cluster-kubernetes-dengan-kubeadm/header_pl2nad.webp)
 
 Hallo, setelah sekian purnama saya tidak menulis apa-apa di blog ini, kali ini saya akan menuliskan langkah-langkah untuk membuat sebuah cluster kubernetes secara manual, yang mana kita akan menggunakan kubeadm dkk. Nah, sebenarnya kalau kita mau buat cluster kubernetes saat ini khususnya jika kita membuatnya di public cloud seperti di [GCP](https://cloud.google.com/), [AWS](https://aws.amazon.com/), [Azure](https://azure.microsoft.com/en-us/), [Alibaba Cloud](https://id.alibabacloud.com/), dsb. Kita sudah dimudahkan dengan layanan terkelola mereka kita tinggal atur jumlah nodenya, spesifikasi mesinnya, hubungkan kubernetes clientnya, udah jalan kita bisa dengan mudah mendeploy aplikasi di kubernetes. Tapi rasanya kurang afdol kalau tidak mencoba cara manualnya dimana kita perlu pasang satu-satu paket yang dibutuhkan dsb. Gimana caranya? langsung saja.
 

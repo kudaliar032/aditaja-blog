@@ -7,9 +7,9 @@ tags:
 draft: false
 toc: false
 backtotop: true
+images:
+- https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/nh97GXa_cgn9i0.webp
 ---
-
-![Deploy Mail Server dengan iRedMail pada RHEL/CentOS](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/nh97GXa_cgn9i0.webp)
 
 Hallo, karena kemaren saya baru saja coba-coba deploy/setup mail server pakai iRedMail jadi sekalian lah ditulis di blog biar gak lupa. Sebenernya sudah tau iRedMail sendiri sudah lumayan lama sih, tapi kemaren-kemaren cuma coba deploy saja terus kirim email sesama user udah gitu aja. Nah, mungkin kali ini saya coba tulis cara yang saya gunakan untuk deploy mail servernya sampai bisa kirim email ke provider email lain (tidak pasti).
 

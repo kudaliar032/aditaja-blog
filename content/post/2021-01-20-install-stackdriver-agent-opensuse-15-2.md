@@ -6,9 +6,9 @@ tags:
 - opensuse
 - gcp
 - monitoring
+images:
+- https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/stackdriver-agent_onvn68.webp
 ---
-
-![Install Stackdriver Agent pada Sistem Operasi openSUSE 15.2 di Google Cloud Platform](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/stackdriver-agent_onvn68.webp)
 
 Hallo, jadi beberapa waktu lalu di kantor baru saja melakukan migrasi project di GCP, dimana salah satu server yang digunakan itu menggunakan sistem operasi openSUSE. Nah, masalah muncul waktu mau buat monitoringnya di GCP, dikarenakan openSUSE yang tidak di support secara default maka dari itu waktu mau install monitoring agent-nya tidak bisa jika pakai script bawaannya GCP, akan muncul pesan peringatan sistem operasi tidak support. Kalau enggak install monitoring agent beberapa metrik tidak muncul lagi, seperti penggunaan memory dan penggunaan disk.
 
