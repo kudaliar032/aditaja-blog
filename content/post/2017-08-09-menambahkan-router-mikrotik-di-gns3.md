@@ -1,13 +1,16 @@
 ---
 title: Menambahkan Router Mikrotik di GNS3
-date: "2017-08-09"
+date: 2017-08-09
+draft: false
+toc: false
+backtotop: true
 tags:
 - mikrotik
 - gns3
-- networking
+- jaringan
+images:
+- https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/3_emjbzf.webp
 ---
-
-![Menambahkan Router Mikrotik di GNS3](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/3_emjbzf.webp)
 
 Selamat malam menjelang pagi semuanya. Setelah sekian lama vakum dari dunia networking saya ingin kembali mengenang masa-masa itu dan ingin membagikan sedikit ilmu kepada pembaca blog ini sekalian. Kita mulai dari ilmu yang ringan-ringan dulu ya bree, soalnya udah pada lupa _#ketawa_. Oke yang akan saya bagikan kali ini adalah bagimana cara menambahkan RouterOS di GNS3.
 

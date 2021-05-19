@@ -1,14 +1,16 @@
 ---
 title: Menginstal Elastic Stack Pada Satu Instance
-date: "2020-10-16"
+date: 2020-10-16
+draft: false
+toc: false
+backtotop: true
 tags:
-- elk
-- elastic
+- elastic stack
 - monitoring
 - log
+images:
+- https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/UToebnD_qmowmb.webp
 ---
-
-![Menginstal Elastic Stack](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/UToebnD_qmowmb.webp)
 
 Hallo, kali ini saya ingin membagikan cara untuk menginstal elastic stack pada sistem operasi linux, nantinya saya akan menggunakan sistem operasi [Ubuntu 18.04](https://releases.ubuntu.com/18.04/). Disini saya tidak akan menjelaskan secara mendetail apa itu elastic stack, saya hanya akan menuliskan langkah-langkah yang dilakukan untuk melakukan instalasi elastic stack. Untuk penjelasan elastic stack sendiri dapat dilihat di situs [elastic.co](https://www.elastic.co/elastic-stack).
 

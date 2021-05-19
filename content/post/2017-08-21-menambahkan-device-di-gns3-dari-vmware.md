@@ -1,14 +1,16 @@
 ---
 title: Cara Menambahkan Device di GNS3 dari VMware
-date: "2017-08-21"
+date: 2017-08-21
+draft: false
+toc: false
+backtotop: true
 tags:
 - gns3
-- networking
 - jaringan
 - vmware
+images:
+- https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/5_kbd62z.webp
 ---
-
-![Cara Menambahkan Device di GNS3 dari VMware](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/5_kbd62z.webp)
 
 Assalamualaikum, selamat malam semuanya. Alhamdulillah saya bisa mendapatkan peringkat 2 di IDN Competition 2017 yang diadain online gak menduga banget coyy hahaha. Terimakasih sebelumnya untuk team saya untuk semuanya yang udah support. Dan kali ini saya ingin membuat tutorial bagaimana cara menambahkan Device di GNS3 dari VMware ya. Karena saya liat-liat banyak temen2 yang masih bingung gimana cara nambahkannya, makanya saya mau share ini. Hal-hal yang harus dipersiapkan sebelumnya antara lain sebagai berikut:
 

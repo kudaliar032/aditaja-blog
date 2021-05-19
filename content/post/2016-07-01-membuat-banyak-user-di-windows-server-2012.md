@@ -1,12 +1,15 @@
 ---
 title: Cara Membuat Banyak User di Windows Server 2012
-date: "2016-07-01"
+date: 2016-07-01
+draft: false
+toc: false
+backtotop: true
 tags:
-- windows server
 - lks
+- windows server
+images:
+- https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/membuat-banyak-user_k42fuz.webp
 ---
-
-![Cara Membuat Banyak User di Windows Server 2012](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/membuat-banyak-user_k42fuz.webp)
 
 Disini saya membagiakan bagaimana cara untuk membuat user sekaligus banyak di Windows Server 2012. Untuk caranya dapat diliat dari video di bawah ini:
 

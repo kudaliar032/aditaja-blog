@@ -1,13 +1,18 @@
 ---
 title: Deploy Aplikasi Flask di Heroku
-date: "2020-07-18"
+date: 2020-07-18
+draft: false
+toc: false
+backtotop: true
 tags:
 - heroku
 - python
 - flask
+images:
+- https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/MRv134Y_zoelt8.webp
 ---
 
-![Deploy Aplikasi Flask di Heroku](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/MRv134Y_zoelt8.webp)
+![Deploy Aplikasi Flask di Heroku]()
 
 Hallo semuanya, saya ingin membagikan sedikit cara untuk mendeploy aplikasi python dengan framework flask di heroku, langsung saja seperti berikut
 

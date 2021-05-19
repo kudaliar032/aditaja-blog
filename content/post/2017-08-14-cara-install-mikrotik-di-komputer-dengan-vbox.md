@@ -1,14 +1,15 @@
 ---
 title: Cara Install Mikrotik di Komputer dengan VirtualBox
-date: "2017-08-14"
+date: 2017-08-14
+draft: false
+toc: false
+backtotop: true
 tags:
 - mikrotik
-- networking
 - jaringan
-- virtualbox
+images:
+- https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/2_hgbiiq.webp
 ---
-
-![Cara Install Mikrotik di Komputer dengan VirtualBox](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/2_hgbiiq.webp)
 
 Selamat pagi, saya ingin membuat tutorial bagaimana cara menginstall mikrotik di PC menggunakan VirtualBox.
 

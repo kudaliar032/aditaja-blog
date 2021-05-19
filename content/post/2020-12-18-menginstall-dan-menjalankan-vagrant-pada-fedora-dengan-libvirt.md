@@ -1,13 +1,16 @@
 ---
 title: Menginstall dan Menjalankan Vagrant pada Fedora dengan libvirt
-date: "2020-12-18"
+date: 2020-12-18
+draft: false
+toc: false
+backtotop: true
 tags:
 - fedora
 - linux
 - vagrant
+images:
+- https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/vagrant-libvirt_o3tfde.webp
 ---
-
-![Menginstall dan Menjalankan Vagrant pada Fedora dengan libvirt](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/vagrant-libvirt_o3tfde.webp)
 
 Halo, saya ingin sedikit mencoret-coret mengenai cara yang saya gunakan untuk menginstall dan menjalankan vagrant pada laptop saya. Dimana saat ini saya menggunakan sistem operasi Fedora 33, di sini saya akan menggunakan Libvirt sebagai provider dari vagrantnya. Diambil dari situsnya, vagrant adalah
 

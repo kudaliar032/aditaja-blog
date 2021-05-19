@@ -1,14 +1,16 @@
 ---
 title: GitLab ChatOps
-date: "2020-09-18"
+date: 2020-09-18
+draft: false
+toc: false
+backtotop: true
 tags:
 - gitlab
 - chatops
-- cicd
 - devops
+images:
+- https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/6M1LQzG_joykbs.webp
 ---
-
-![GitLab ChatOps](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/6M1LQzG_joykbs.webp)
 
 Hallo, saya ingin membagikan sesuatu yang baru saja saya coba pelajari yaitu GitLab ChatOps. Sebelumnya ChatOps itu apa sih? Menurut dari beberapa artikel di internet yang saya baca. Yang kemudian coba saya simpulkan, ChatOps merupakan.
 

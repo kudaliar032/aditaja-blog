@@ -1,13 +1,16 @@
 ---
 title: Membuat OpenVPN Server Menggunakan Docker + 2FA Google Authenticator
-date: "2020-12-26"
+date: 2020-12-26
+draft: false
+toc: false
+backtotop: true
 tags:
 - docker
 - linux
 - server
+images:
+- https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/2020-12-26-membuat-openvpn-server-menggunakan-docker_wh2ilu.webp
 ---
-
-![Membuat OpenVPN Server Menggunakan Docker + 2FA Google Authenticator](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/2020-12-26-membuat-openvpn-server-menggunakan-docker_wh2ilu.webp)
 
 Hallo, jadi ceritanya beberapa lalu saya dapat permintaan untuk melakukan deployment server. Dimana untuk keamannya diminta untuk mempersiapkan VPN yang digunakan saat hendak mengakses server-server yang ada, dan server-server tersebut hanya bisa diakses menggunakan VPN tersebut jadi harapannya lebih aman. Ini openingnya kok aneh ya, wkwkwkk.
 

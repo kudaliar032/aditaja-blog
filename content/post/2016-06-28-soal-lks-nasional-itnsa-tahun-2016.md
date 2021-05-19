@@ -1,16 +1,15 @@
 ---
 title: Soal LKS Nasional IT Network Systems Administration Tahun 2016
-date: "2016-06-28"
+date: 2016-06-28
+draft: false
+toc: false
+backtotop: true
 tags:
 - lks
-- lks nasional
 - smk
-- linux
-- debian
-- packet tracer
+images:
+- https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/soal-lks_x5b6ba.webp
 ---
-
-![Soal LKS Nasional IT Network Systems Administration Tahun 2016](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/soal-lks_x5b6ba.webp)
 
 Berikut ini saya membagikan soal LKS untuk bidang lomba IT Network System Administrator/IT Networking Support untuk tingkat nasional ke-24 yang di adakan pada Mei 2016 di Malang, Jawa Timur:
 

@@ -1,16 +1,15 @@
 ---
 title: Soal LKS Nasional IT Network Systems Administration Tahun 2017
-date: "2017-08-15"
+date: 2017-08-15
+draft: false
+toc: false
+backtotop: true
 tags:
 - lks
-- lks nasional
 - smk
-- linux
-- debian
-- packet tracer
+images:
+- https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/4_wyrz6k.webp
 ---
-
-![Soal LKS Nasional IT Network Systems Administration Tahun 2017](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/4_wyrz6k.webp)
 
 Selamat malam, saya ingin membagikan soal-soal LKS Tingkat Nasional bidang lomba IT Network Systems Administration tahun 2017 atau LKS nasional ke-25 yang diselenggarakan di kota Surakarta, Jawa Tengah. Perlu diketahui pada tahun ini yang menjadi juara 1 nya berasal dari Jawa Barat, dan kebetulan yang dari Kalimantan selatan di wakilin sekolah saya lagi SMK Negeri 2 Banjarbaru tercinta. dan Alhamdulillah berhasil mendapat mendali perak.  Selamat untuk sukron.. hahahaa :laughing:. Untuk soal-soalnya bisa sebagai berikut:
 

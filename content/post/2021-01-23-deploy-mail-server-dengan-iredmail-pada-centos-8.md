@@ -1,12 +1,12 @@
 ---
 title: Deploy Mail Server dengan iRedMail pada RHEL/CentOS
-date: "2021-01-23"
-tags:
-- linux
-- mail server
+date: 2021-01-23
 draft: false
 toc: false
 backtotop: true
+tags:
+- linux
+- mail server
 images:
 - https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-01-23-deploy-mail-server-dengan-iredmail-pada-centos-8/nh97GXa_cgn9i0.webp
 ---

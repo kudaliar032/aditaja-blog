@@ -1,13 +1,15 @@
 ---
 title: Menghubungkan Koneksi WiFi pada Debian 10 "Buster" Mode Text
-date: "2020-12-14"
+date: 2020-12-14
+draft: false
+toc: false
+backtotop: true
 tags:
 - debian
-- cli
 - linux
+images:
+- https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/BS0ofve_rfnfek.webp
 ---
-
-![Menghubungkan Koneksi WiFi pada Debian 10 "Buster" Mode Text](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/BS0ofve_rfnfek.webp)
 
 Hallo, saya kali ini mau nulis-nulis dikit mengenai cara untuk menghubungkan koneksi wifi pada sistem operasi Debian 10 "Buster", langsung lah pendek saja.
 

@@ -1,15 +1,14 @@
 ---
 title: Soal Seleksi Nasional ASC Tahun 2017
-date: "2017-09-20"
+date: 2017-09-20
+draft: false
+toc: false
+backtotop: true
 tags:
 - asc
-- seleksi nasional
-- linux
-- debian
-- packet tracer
+images:
+- https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/21414629_10154605780726612_3067913541061812293_o_fl6wqd.webp
 ---
-
-![Soal Seleksi Nasional ASC Tahun 2017](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/21414629_10154605780726612_3067913541061812293_o_fl6wqd.webp)
 
 Selamat sore, saya kali ini ingin membagikan soal-soal dari seleksi nasional ASC tahun 2017 yang dilaksanakan beberapa waktu lalu. Soal-soalnya sendiri terdiri dari 3 Modul yang mana soal-soalnya membahas mengenai Linux, Windows dan Packet Tracer. Langsung saja berikut soal-soalnya:
 

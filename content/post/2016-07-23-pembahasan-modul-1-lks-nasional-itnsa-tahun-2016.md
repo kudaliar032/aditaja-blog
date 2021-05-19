@@ -1,14 +1,15 @@
 ---
 title: Pembahasan Modul 1 LKS Nasional IT Network Systems Administration Tahun 2016
-date: "2016-07-23"
+date: 2016-07-23
+draft: false
+toc: false
+backtotop: true
 tags:
 - lks
 - smk
-- linux
-- debian
+images:
+- https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/5_ejtz3s.webp
 ---
-
-![Pembahasan Modul 1 LKS Nasional IT Network Systems Administration Tahun 2016](https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/headers/5_ejtz3s.webp)
 
 Saya akan membagikan tutorial untuk mengerjakan soal LKS Nasional IT NSA untuk Modul 1 yang bermaterikan Linux Server ataupun Client. Baiklah langsung saja berikut saya buat tutorialnya dalam bentuk video dibawah ini:
 

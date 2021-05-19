@@ -1,12 +1,12 @@
 ---
 title: Membuat Cluster Kubernetes Dengan Kubeadm
 date: 2021-05-18T20:54:16+08:00
-tags:
-- kubernetes
-- container
 draft: false
 toc: false
 backtotop: true
+tags:
+- kubernetes
+- container
 images:
 - https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-05-18-membuat-cluster-kubernetes-dengan-kubeadm/cover.jpg
 ---

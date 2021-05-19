@@ -1,6 +1,9 @@
 ---
 title: Install Stackdriver Agent pada Sistem Operasi openSUSE 15.2 di Google Cloud Platform
-date: "2020-09-18"
+date: 2021-01-20
+draft: false
+toc: false
+backtotop: true
 tags:
 - linux
 - opensuse
