@@ -19,7 +19,7 @@ disqusShortName = "aditaja-my-id"
   post="/posts/:filename/"
   page="/:filename/"
 
-[Author]
+[author]
   name = "Aditya Rahman"
 
 [outputs]
@@ -81,8 +81,11 @@ disqusShortName = "aditaja-my-id"
 [params]
   mainSections = ["post"]
   favicon = "favicon.ico"
+  description = "Sebuah blog dari Aditya Rahman, seorang pengguna komputer dan internet."
+  images = ["https://res.cloudinary.com/kudaliar032/image/upload/photos/wallpaper/meratus_lgjvl4.webp"]
 
-  [params.logo]
+
+[params.logo]
     url = "logo.svg" # static/images/icon.png
     width = 35
     height = 35
