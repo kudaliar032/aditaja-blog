@@ -94,3 +94,4 @@ disqusShortName = "aditaja-my-id"
 
 [taxonomies]
   series = "series"
+  tags = "tags"
