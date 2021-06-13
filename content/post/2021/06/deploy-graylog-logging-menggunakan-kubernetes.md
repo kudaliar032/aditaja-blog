@@ -9,7 +9,7 @@ tags:
 - "log"
 - "graylog"
 images:
-- "https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-06-09-deploy-graylog-logging-menggunakan-kubernetes/header.jpg"
+- "https://res.cloudinary.com/kudaliar032/image/upload/aditaja-blog/posts/2021-06-09-deploy-graylog-logging-menggunakan-kubernetes/header.webp"
 ---
 
 Hallo, selamat siang (saat ini ditulis). Kali ini saya hendak sedikit berbagi pengalaman mencoba deploy Graylog di cluster Kubernetes. Sebelumnya mungkin biar kaya penulis profesional kita sedikit kasih penjelasan yak apa itu Graylog. Menurut [wikipedia](https://en.wikipedia.org/wiki/Graylog) graylog adalah sebuah alat yang dapat digunakan untuk mengcapture log secara terpusat, menyimpannya, dan memungkinkan kita untuk melakukan pencarian log secara real time terhadap terabytes-an data log dari berbagai komponen infrastruktur IT dan aplikasi. Ya, kira-kira begitu semoga bisa dipahami :grin:, oke langsung saja beginilah step-step yang saya pakai saat mencoba mendeploy graylog di sebuah cluster Kubernetes.
@@ -18,7 +18,7 @@ Hallo, selamat siang (saat ini ditulis). Kali ini saya hendak sedikit berbagi pe
 
 Berikut adalah requirements yang dibutuhkan
 
-- Kubernetes cluster, kalau belum buat bisa liat [di sini]({{< ref "2021-05-18-membuat-cluster-kubernetes-dengan-kubeadm.md" >}})
+- Kubernetes cluster, kalau belum buat bisa liat [di sini]({{< ref "../05/membuat-cluster-kubernetes-dengan-kubeadm.md" >}})
 - Helm
 
 ## Step-step
