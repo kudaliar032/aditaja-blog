@@ -29,7 +29,7 @@ disqusShortName = "aditaja-my-id"
 [[params.nav]]
   identifier = "about"
   name = "About"
-  icon = "fas fa-user fa-lg"
+  icon = "fas fa-question fa-lg"
   url = "/about/"
   weight = 3
 
