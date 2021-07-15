@@ -8,7 +8,7 @@ tags:
 - "gitpod"
 - "code"
 images:
-- "https://via.placeholder.com/500x250.webp?text=please+change+this+header"
+- "https://imgur.com/zIwUV2s.jpg"
 ---
 
 Hallo semuanya, setelah kemaren menulis tentang [ngoding di mana saja dengan gitpod]({{< ref "./ngoding-di-mana-saja-pakai-gitpod.md" >}}), di mana pada postingan tersebut saya menggunakan layanan SaaS dari Gitpod yang tinggal daftar dan koding. Kali ini saya mencoba mendeploy Gitpod pada server milik kita atau biasa disebut Self-Hosted. Nantinya kita akan mendeploy gitpodnya di Kubernetes Cluster menggunakan bantuan dari Helm yang telah disediakan oleh gitpod itu sendiri. Untuk kubernetes clusternya sendiri saya buat menggunakan bantuan dari [K3s](https://k3s.io/). Kenapa? Karena menurut [dokumentasi](https://www.notion.so/1b9eac5cb33d42e391f86a87f0e37836?v=4f2ec7c943514ee19203b9d4fe096094) yang diberikan oleh gitpod, pada saat ini platform yang sudah terbukti dan support dengan gitpod itu baru kubernetes cluster yang dibuat menggunakan GKE dan K3s. Selain itu tidak support dan belum terbukti. Ya karena kebetulan saya cuma punya 1 VPS buat mainan dan tidak memungkinkan menggunakan GKE akhirnya saya memutuskan untuk menggunakan K3s untuk membuat clusternya. Oke langsung saja jangan banyak bacot. Beginilah langkah-langkah yang saya gunakan saat mendeploy gitpod self-hosted. Disini saya akan mencoba untuk mendeploy dari VM kosongan yak.
