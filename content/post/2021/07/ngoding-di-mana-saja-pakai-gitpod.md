@@ -11,7 +11,7 @@ images:
 - "https://imgur.com/8F3zCnv.jpg"
 ---
 
-Halo semuanya, kali ini saya hendak berbagi mengenai sebuah tools yang dapat digunakan untuk ngoding di mana saja dan kapan saja (selama ada internet ya). Selain itu dengan bantuan tools ini kita bisa ngoding dengan nyaman tanpa perlu khawatir memikirkan laptop/komputer yang digunakan spesifikasinya tidak kuat untuk menjalankan koding yang sedang dikerjakan. Oh bukan hanya itu, dengan tools ini kita juga bisa berkolaborasi seperti kita ngedit dokumen di google docs. Mantab sekali bukan. Tools itu bernama [Gitpod](https://www.gitpod.io/). Untuk fitur-fitur yang dimiliki Gitpod sendiri antara lain:
+Hallo semuanya, kali ini saya hendak berbagi mengenai sebuah tools yang dapat digunakan untuk ngoding di mana saja dan kapan saja (selama ada internet ya). Selain itu dengan bantuan tools ini kita bisa ngoding dengan nyaman tanpa perlu khawatir memikirkan laptop/komputer yang digunakan spesifikasinya tidak kuat untuk menjalankan koding yang sedang dikerjakan. Oh bukan hanya itu, dengan tools ini kita juga bisa berkolaborasi seperti kita ngedit dokumen di google docs. Mantab sekali bukan. Tools itu bernama [Gitpod](https://www.gitpod.io/). Untuk fitur-fitur yang dimiliki Gitpod sendiri antara lain:
 
 - Menghemat waktu dengan prebuilds
 - Memulai koding dengan lingkungan yang bersih
