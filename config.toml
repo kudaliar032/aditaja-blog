@@ -1,7 +1,7 @@
 theme = "harbor"
 baseurl = "https://blog.aditaja.my.id/"
 title = "blog aditaja"
-paginate = 3
+paginate = 5
 languageCode = "id"
 DefaultContentLanguage = "id"
 footnoteReturnLinkContents = "^"
