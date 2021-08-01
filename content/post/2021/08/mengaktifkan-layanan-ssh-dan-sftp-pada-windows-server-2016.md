@@ -110,3 +110,7 @@ Hallo semuanya, mari kita awali bulan Agustus dengan sebuah catatan sederhana, s
 ![](https://imgur.com/YzKTizF.jpg)
 
 Selesai juga sudah semuanya, sebenarnya ada beberapa hal lain yang bisa anda lakukan seperti mensetting agar user SFTP di jail untuk tidak dapat mengakses parent pathnya. Selain itu juga bisa mematikan SSH-nya atau SFTP only, dll. Mungkin cukup itu saja kali ya kali ini, terima kasih :pray: :pray: :pray:
+
+## Video
+
+{{< youtube "sBVgPJ84MWc" >}}
