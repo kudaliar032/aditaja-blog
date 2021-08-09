@@ -11,7 +11,7 @@ tags:
 - "linux"
 - "server"
 images:
-- "https://via.placeholder.com/500x250.webp?text=please+change+this+header"
+- "https://imgur.com/wa6REYW.jpg"
 ---
 
 Hallo semuanya, kembali lagi bersama saya, kali ini saya akan menulis sesuatu yang ringan saja, ya walaupun semua tulisan di blog saja ringan-ringan semua ya wkwkwk :laughing: :laughing: :laughing:. Jadi ceritanya ya seperti biasa juga baru-baru ini saya nyobain untuk setup web server dengan [OpenLiteSpeed](https://openlitespeed.org/) yang mana mereka mengclaim lebih cepat dari Nginx dan Apache untuk menangani WordPress + Cache tapi saya tidak akan membahas itu ya saya cuma ingin menulis sesuatu yang sudah saya coba saja agar tidak lupa.
