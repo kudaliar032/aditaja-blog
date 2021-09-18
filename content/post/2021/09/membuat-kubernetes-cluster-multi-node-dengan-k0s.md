@@ -8,7 +8,7 @@ tags:
 - kubernetes
 - container
 images:
-- "https://via.placeholder.com/500x250.webp?text=please+change+this+header"
+- "https://imgur.com/zhGuWpt.jpg"
 ---
 
 Hallo semuanya, semoga kita semua sehat selalu. Kali ini saya mau menulis mengenai sebuah Kubernetes Distribution yang terbilang baru ya initial releasenya sendiri November 2020 belum setahun berarti, namanya adalah [k0s](https://k0sproject.io/). k0s menawarkan deployment kubernetes yang sudah kumplit untuk menjalankan sebuah kubernetes cluster sudah termasuk container runtimenya, networknya juga sudah ada jadi mudah lah. Berikut fitur-fitur utama yang ditawarkan oleh k0s.
