@@ -7,7 +7,7 @@ backtotop: true
 tags:
 - ""
 images:
-- "https://via.placeholder.com/500x250.webp?text=please+change+this+header"
+- "https://imgur.com/p9O40ws.jpg"
 ---
 
 Hallo semuanya, selamat datang bulan November. Kali ini saya hendak sedikit berbagi mengenai hal yang baru saya coba-coba. Mendeploy aplikasi kita ke Elastic Beanstalk namun ada yang sedikit berbeda yaitu saya mencoba mendeploy docker image ke Elastic Beanstalk tanpa menggunakan Image Repoisotry. Jadi saya mencoba untuk mengirim docker image ke EB langsung (dengan fitur save dan load) tanpa menggunakan docker registry. Oke, langsung saja kita mencobanya. Pertama-tama pastinya kita harus membuat dulu Application dan Environment di AWS. Jangan lupa untuk memilih Docker untuk platformnya.
