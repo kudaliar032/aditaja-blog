@@ -20,6 +20,8 @@ Untuk topologi enggak aneh-aneh cuma ada 1 vm, kemudian untuk spesifikasinya sep
 - 2048 MB Memory
 - Sistem Operasi Rocky Linux 8.4
 
+Berikut Vagrantfile yang saya gunakan [nginx-basic-auth](https://github.com/kudaliar032/vagrantfile-labs/tree/main/nginx-basic-auth)
+
 ## Prepare Web Server
 
 Mari pertama-tama kita menginstall web servernya dulu yaitu nginx, selain memasang nginx kita juga perlu memasang apache tools yang akan digunakan untuk mengenerate password
